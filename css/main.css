@@ -13,7 +13,7 @@ span a {
   display: grid;
   border-radius: 20px;
   margin-left: 10px;
-  margin-top:5px;
+  margin-top:0px;
   margin-right: 20px;
   padding-left: 20px;
 }
@@ -24,7 +24,7 @@ span a {
   justify-content: center !important;
   margin: 0 auto !important;
   color:white;
-  padding-right:10%;
+
   font-size:90%
 }
 #topbar {
@@ -49,3 +49,9 @@ span a {
   background-image: linear-gradient(to bottom right, rgb(15, 17, 90), rgb(34, 12, 70));
  }
 
+ .list {
+  display: grid;
+  align-items: center; 
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+}
