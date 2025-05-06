@@ -2,9 +2,13 @@
   font-family: sans-serif !important;
 }
 
-span a {
-  color: white !important;
-  text-decoration: none !important;
+html {
+  background-image: linear-gradient(to bottom right, rgb(15, 17, 90), rgb(34, 12, 70));
+ }
+
+a {
+    color: rgb(63, 165, 179) !important;
+    text-decoration: none;
 }
 
 #main-content {
@@ -18,15 +22,6 @@ span a {
   padding-left: 20px;
 }
 
-#footer {
-  position: relative !important;
-  text-align: center !important;
-  justify-content: center !important;
-  margin: 0 auto !important;
-  color:white;
-
-  font-size:90%
-}
 #topbar {
  position: relative;
  top: -50;
@@ -45,13 +40,60 @@ span a {
   float: left;
  }
 
- html {
-  background-image: linear-gradient(to bottom right, rgb(15, 17, 90), rgb(34, 12, 70));
- }
+#sidebar a {
+  color: white !important;
+  text-decoration: none;
+}
 
- .list {
+#footer {
+  position: relative !important;
+  text-align: center !important;
+  justify-content: center !important;
+  margin: 0 auto !important;
+  color:white;
+
+  font-size:90%
+}
+
+.hatnote {
+  background-color: rgb(240, 236, 236);
+  margin-top: 20px;
+  margin-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  font-style: italic;
+}
+
+.hatnote a {
+  color: black !important;
+}
+
+.list {
   display: grid;
   align-items: center; 
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 5px;
+}
+
+img {
+  justify-content: center;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0px 0px 3px;
+}
+
+#note {
+  font-style: italic;
+  font-size: 15px;
+}
+
+#note a {
+  font-style: normal;
+}
+
+#caption {
+  font-size: small;
+  font-style: italic;
+  text-align: center;
 }

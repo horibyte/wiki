@@ -27,13 +27,17 @@ twitter_username: Horibyte
 github_username:  horibyte
 
 # Build settings
-theme: minima
+# theme: minima
 plugins:
   - jekyll-feed
 
 # Include from processing.
 include:
   - stuffyxp_data.json
+
+kramdown:
+  input: GFM
+  hard_wrap: true
 
 # Exclude from processing.
 # The following items will not be processed, by default.

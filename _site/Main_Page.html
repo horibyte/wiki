@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | default: "Main Page" }} ~ HoriWiki</title>
-    <link rel="shortcut icon" href="{{ page.favicon }}" type="image/x-icon">
+    <title>Main Page ~ HoriWiki</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="me" href="https://wetdry.world/@horibyte">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
@@ -37,13 +37,18 @@
 <div class="container" id="main-content" style="background-color: white;">
     <div class="container" id="page-content" style="text-align: left !important; width:100%; ">
         <div class="hatnote">
-            {{ page.hatnote }}
+            
         </div>
-      <h2>{{ page.title }}</h2><hr>
-{{content}}
+      <h2></h2><hr>
+<h2>Welcome to HoriWiki!</h2>
+<p>This is the official Horibyte wiki, from meanings of inside jokes--to random things from the Horiverse!</p>
 <p></p>
 </div>
 </div>
-{% include footer.html %}
+<div class="container" id="footer">
+    <p>Copyright (C) 2025 The HoriWiki Contributors. All Rights Reserved.<br>Content and source code is licensed under CC-BY-SA-4.0<br><span style="font-size:small;">HoriWiki Engine pre-<span style="font-size:14.5px;">α</span>0.6</span><br><span style="font-size:x-small;"><i>Made with <3 by Horibyte.</i></span></span></p>
+    <!-- forked from Horibyte Website 2.4.3565 -->
+</div>
+
 </body>
 </html>
