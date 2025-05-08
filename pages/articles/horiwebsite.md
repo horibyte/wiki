@@ -53,5 +53,19 @@ This update also renamed the website from "Horibyte Website" to "HoriWebsite", a
 
 HoriWebsite was always developed alongside Clyron, and the website's source code is licensed under MIT.
 
+### Versioning dillema
+
+HoriWebsite's version string inherits from its prior version, for example, StuffyXP Website 2.1 --> Horibyte Website 2.2, the build string can be discompossed as the following:
+
+`2.4.3565.main.250406-1905`
+
+`2` = major version
+`4` = minor version
+`3565` = build number
+`main` = build branch
+`250406` = compile date in YYMMDD format, example = 250505: May 5 2025
+`1905` = compile time, 24-hour format is used here without the colon, 1905 = 7:05pm
+compile time will always be in the UTC-6 timezone.
+
 
 <p id="note"><a href="#note1" id="notec1">&sup1;<span></span>&uparrow;</a> Formerly known as <b>StuffyXP Website</b> and <b>Stuffy's Website</b>; Fully known as <b>Horibyte Website</b> as well.</p>
