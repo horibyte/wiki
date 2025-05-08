@@ -28,8 +28,6 @@
 <meta content="website" property="type">
 <meta name="google-site-verification" content="juCkrJsWFUpDDiBrebgAywCVCCE90p5S7yfXBNjIlXQ" />
 
-
-<div class="container is-hidden-mobile">
 <!-- content header -->
  <div class="container">
     <div class="container" id="topbar" style="background-color: inherit; height:90px !important; color:white !important; text-align: center;">
@@ -49,47 +47,17 @@
         </div>
     </div>
 </div>
-</div>
-<div class="container is-hidden-widescreen">
-    <div class="container">
-        <div class="container" id="topbar" style="background-color: inherit; height:90px !important; color:white !important; text-align: center;">
-            <div class="container" id="hotlinks">
-                <!-- temporary text, only use span to avoid breaking it -->
-                <span style="font-family: sans-serif; font-size: 60px; text-align: center !important; text-shadow: 0 0 4px gray;"><span style="font-size:5px;text-align: center !important;">&nbsp;</span>HoriWiki</span><br>
-                <div class="container" style="color:white;">
-                <span style="color:white!important;"><a href="Main_Page">Main Page</a>&nbsp;&nbsp;</span>
-                <span style="color:white!important;"><a href="Special%3ASitemap">Sitemap</a>&nbsp;&nbsp;</span>
-                <span style="color:white!important;"><a href="Contributing_to_HoriWiki">Contribute!</a></span>
-            </div>
-            </div>
-        </div>
-    </div>
-</div>
 </head>
 <body>
-<div class="container is-hidden-mobile">
 <div class="container" id="main-content" style="background-color: white;">
     <div class="container" id="page-content" style="text-align: left !important; width:100%; ">
         <div class="hatnote">
             {{ page.hatnote }}
         </div>
-      <h2 id="pagetitle">{{ page.title }}</h2><hr style="color: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))!important;">
+      <h2 id="pagetitle">{{ page.title }}</h2><hr>
 {{content}}
 <p></p>
 </div>
-</div>
-</div>
-<div class="container is-hidden-widescreen">
-    <div class="container" id="main-content-m" style="background-color: white;">
-        <div class="container" id="page-content" style="text-align: left !important; width:100%; ">
-            <div class="hatnote-m">
-                {{ page.hatnote }}
-            </div>
-          <h2 id="pagetitle">{{ page.title }}</h2><hr>
-    {{content}}
-    <p></p>
-    </div>
-    </div>
 </div>
 {% include footer.html %}
 

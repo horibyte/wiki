@@ -20,6 +20,22 @@ a {
   margin-top:0px;
   margin-right: 20px;
   padding-left: 20px;
+  padding-right: 15px;
+}
+
+#main-content-m {
+  position: relative;
+  margin: 0 auto;
+  display: grid;
+  border-radius: 20px;
+  
+  margin-top:8%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+hr {
+  color: linear-gradient(to left rgba(0,0,0,1), rgba(0,0,0,0))!important;
 }
 
 #topbar {
@@ -65,6 +81,19 @@ a {
   font-style: italic;
 }
 
+#hotlinks a {
+  color:white !important;
+  text-shadow: 0 0 5px gray !important;
+}
+
+.hatnote-m {
+  background-color: rgb(240, 236, 236);
+  margin-top: 10px;
+  word-wrap: normal;
+  border-radius: 5px;
+  font-style: italic;
+}
+
 .hatnote a {
   color: black !important;
 }
@@ -102,4 +131,20 @@ code {
   font-family: 'Consolas' !important;
   font-size: 14px;
   margin-bottom: 1.5%;
+}
+
+/* is-hidden-widescreen re-implementation from Bulma */
+@media screen and (min-width:1081px) {
+  .is-display-none-widescreen,
+  .is-hidden-widescreen {
+    display:none!important;
+  }
+}
+
+/* is-hidden-mobile re-implementation from Bulma */
+@media screen and (max-width:1080px) {
+  .is-display-none-mobile,
+  .is-hidden-mobile {
+    display:none!important;
+  }
 }

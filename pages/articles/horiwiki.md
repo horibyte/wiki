@@ -89,7 +89,10 @@ Alpha 1.1 is a major milestone in the engine's development history as it made so
 ![alpha 1.2 docs file](img/articles/horiwiki/a1.2-cthrwd.png){: style="width:50%;"}
 
 
-Welcome to the present! Alpha 1.2 is the current version of this page as of May 7 2025.<br>Nothing really new to engine aside from some bugfixing, still a cool thing nevertheless
+Welcome to the present! Alpha 1.2 ~~is~~ was the current version of this page as of May 7 2025.<br>Nothing really new to engine aside from some bugfixing, still a cool thing nevertheless
+
+Beta 1.0 was released on May 7 2025 as well, including fixes for mobile!!
+![beta 1.0 mobile screenshot](img/articles/horiwiki/b1.0-m.png){: style="width:50%;"}
 
 HoriWiki still continues its development period, as there are more things to add to make it a fully complete MediaWiki-like port to Jekyll.
 
