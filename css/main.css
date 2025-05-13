@@ -1,5 +1,5 @@
 * {
-  font-family: sans-serif !important;
+  font-family: 'Trebuchet MS', 'sans-serif' !important; 
 }
 
 html {
@@ -92,6 +92,7 @@ hr {
   word-wrap: normal;
   border-radius: 5px;
   font-style: italic;
+
 }
 
 .hatnote a {
