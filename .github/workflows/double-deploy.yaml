@@ -2,7 +2,7 @@ name: Deploy Jekyll Branches
 
 on:
   push:
-    branches: [main, material] # Updated branch name
+    branches: [main, material]
 
 jobs:
   build-main:
@@ -16,8 +16,7 @@ jobs:
       - name: Set up Ruby and Jekyll
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.x
-          bundler-version: latest
+          ruby-version: 2.7.x # Using a specific available Ruby version
 
       - name: Install dependencies
         run: bundle install
@@ -40,23 +39,22 @@ jobs:
       - name: Checkout material branch
         uses: actions/checkout@v2
         with:
-          ref: material # Updated branch name
-          path: material-src # Adjusted path to match branch name
+          ref: material
+          path: material-src
           fetch-depth: 0
 
       - name: Set up Ruby and Jekyll for material
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.x
-          bundler-version: latest
+          ruby-version: 2.7.x # Using a specific available Ruby version
 
       - name: Install dependencies for material
         run: bundle install
-        working-directory: ./material-src # Adjusted working directory
+        working-directory: ./material-src
 
       - name: Build material site to output
         run: bundle exec jekyll build -d ../material-output
-        working-directory: ./material-src # Adjusted working directory
+        working-directory: ./material-src
 
       - name: Deploy material site to /material
         uses: peaceiris/actions-gh-pages@v3
