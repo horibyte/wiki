@@ -16,7 +16,7 @@ jobs:
       - name: Set up Ruby and Jekyll
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6.10 # Using a specific available Ruby version
+          ruby-version: 3.3.x # Using a specific available Ruby version
 
       - name: Install dependencies
         run: bundle install
@@ -46,7 +46,7 @@ jobs:
       - name: Set up Ruby and Jekyll for material
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 2.6.10 # Using a specific available Ruby version
+          ruby-version: 3.3.x # Using a specific available Ruby version
 
       - name: Install dependencies for material
         run: bundle install
