@@ -2,14 +2,10 @@ var intervalId;
 
 function displayUserAgent() {
   var userAgentString = navigator.userAgent;
-  var originalText = '<p><i class="fas fa-circle-info"></i> HoriWiki Pre-alpha engine Version 2.4.3567.horiwiki-pa1.250504-1052</p><i class="fas fa-user-gear"></i>&nbsp;' + userAgentString;
+  var originalText = '<span>Build 1.0.1.367.main.250515-1422</span><br>';
   var htmlContent = originalText; // Default to original text
 
   const isLocalhost = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost";
-
-  if (event && event.shiftKey && isLocalhost) { // Check shift key and localhost
-    htmlContent = originalText.replace("HoriWiki Pre-alpha engine", "HoriWiki Pre-alpha engine DEBUG;");
-  }
 
   document.getElementById('userAgent').innerHTML = htmlContent;
 }
