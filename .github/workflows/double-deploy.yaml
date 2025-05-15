@@ -1,0 +1,69 @@
+name: Deploy Jekyll Branches
+
+on:
+  push:
+    branches: [main, material] # Updated branch name
+
+jobs:
+  build-main:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Set up Ruby and Jekyll
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.x
+          bundler-version: latest
+
+      - name: Install dependencies
+        run: bundle install
+
+      - name: Build main site
+        run: bundle exec jekyll build -d _site
+
+      - name: Deploy main site to root
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
+
+  build-material:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout material branch
+        uses: actions/checkout@v2
+        with:
+          ref: material # Updated branch name
+          path: material-src # Adjusted path to match branch name
+          fetch-depth: 0
+
+      - name: Set up Ruby and Jekyll for material
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.x
+          bundler-version: latest
+
+      - name: Install dependencies for material
+        run: bundle install
+        working-directory: ./material-src # Adjusted working directory
+
+      - name: Build material site to output
+        run: bundle exec jekyll build -d ../material-output
+        working-directory: ./material-src # Adjusted working directory
+
+      - name: Deploy material site to /material
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./material-output
+          publish_subdir: material
+          force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
