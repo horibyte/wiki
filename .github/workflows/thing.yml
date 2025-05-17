@@ -15,7 +15,7 @@
               - name: Set up Ruby
                 uses: ruby/setup-ruby@v1
                 with:
-                  ruby-version: 3.x # Or your preferred Ruby version
+                  ruby-version: 3.3.4 # Or your preferred Ruby version
 
               - name: Install dependencies
                 run: |
