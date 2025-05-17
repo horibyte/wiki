@@ -1,4 +1,4 @@
-name: Jekyll Deploy to GitHub Pages
+name: Deploy HoriWiki
 
 on:
   push:
