@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoriWebsite ~ HoriWiki</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>
+        html {
+            background-image: url('https://getmdl.io/assets/demos/transparent.jpg') !important;
+            background-attachment: fixed;
+            background-size: 210%;background-position-x: 45%;
+            /* background-image: linear-gradient(to bottom right, rgb(15, 17, 90), rgb(34, 12, 70)) */
+        }
+    </style>
+</head>
+<body>
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.mdl-layout__header, .is-casting-shadow {
+    display:block !important;
+    word-wrap: normal;
+}
+
+@media screen and (max-width:1080px) {
+  .is-display-none-mobile,
+  .is-hidden-mobile {
+    display:none!important;
+  }
+}
+
+.hatnote {
+  background-color: rgb(240, 236, 236);
+  margin-top: 20px;
+  margin-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-style: italic;
+}
+
+img {
+    box-shadow:0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.2),0 1px 8px 0 rgba(0,0,0,.12);
+    justify-content: center;
+    margin: 0 auto;
+    display: block;
+}
+
+/* why doesnt this fucking work */
+#background-image {
+    filter: blur(5%) !important;
+}
+
+#caption {
+    color:gray;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.mdl-layout__header {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+</style>
+<div class="container" id="background-image">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+        <div class="container is-hidden-mobile">
+      <span id="title" class="mdl-layout-title">HoriWiki Material Design 2014 Beta</span>
+      </div>
+       <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--align-right" style="color: white !important;">
+        <div class="mdl-textfield__holder">
+            
+       <!-- Simple Textfield -->
+            <div class="container" style="padding: 5%; margin:-10px !important;">
+            <form action="results" method="get">
+            <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="search-input" name="q">
+            <label class="mdl-textfield__label" for="sample1"><i style="color: rgb(230,230,230) !important">Search HoriWiki...</i></label>
+            </div>
+            </div>
+            </form>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">HoriWiki Material</span><span class="mdl-layout-title" style="margin-top: -15% !important;">Design 2014 Beta</span>
+    <nav class="mdl-navigation" style="margin-top: -5% !important;">
+      <a class="mdl-navigation__link" href="Main_Page">Main Page</a>
+      <a class="mdl-navigation__link" href="Special%3ASitemap">Sitemap</a>
+      <a class="mdl-navigation__link" href="Contributing_to_HoriWiki">Contribute!</a>
+      <a class="mdl-navigation__link" href="https://horibyte.is-a.dev/wiki/">Old Layout</a>
+      <span style="padding-left:5.5%; color:gray"><br>&copy;2025 HoriWiki Contributors.<br>All Rights Reserved.<br><br>Content & <a href="https://github.com/horibyte/wiki/">source code</a> licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0</a><br><br>HoriWiki Engine <span id="devphase" style="cursor:help;">β</span><div class="mdl-tooltip" data-mdl-for="devphase">Beta</div>2<br><span style="font-size: smaller; color:darkgray !important;">Build 2.0.451.material.250516-1647</span></span>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="box mdl-shadow--8dp" style="background-color: white; width:96%; justify-content: center; display: block; margin: 0 auto; padding: 8px;">
+        <div class="container" style="margin-left: 15px; margin-right: 15px; margin-top: 15px; margin-bottom: 15px">
+            <div class="hatnote">
+            
+        </div>
+      <h4 id="pagetitle" style="color:rgb(27, 122, 167)" >HoriWebsite</h4><hr style="color: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))!important;">
+            <p><strong>HoriWebsite</strong><a href="#notec1" id="note1">¹</a> is a website owned and mantained by <a href="Horibyte">Horibyte</a> themselves, hosted on <a href="https://pages.github.com">GitHub Pages</a> and powered by <a href="https://jekyllrb.com">Jekyll</a> software. It is Horibyte’s personal website since June 2024.</p>
+
+<h3 id="overview">Overview</h3>
+
+<p>The website features a home page, blog, socials, projects, art and about me page. Socials and Projects show socials and projects of Horibyte, the Art page shows art made by Horibyte, mainly about <a href="Comet">their OC</a>, and the blog is Horibyte’s personal blog with posts about random tech stuff. The about me page shows Horibyte’s biography, trivia about them and credits to resources &amp; people that made the website possible to make.</p>
+
+<h3 id="early-development">Early Development</h3>
+
+<p>Development of HoriWebsite started on May 2024 under the name “Stuffy’s Website”, an early development showcase video was uploaded to the <a href="StuffyXP_Extras">StuffyXP Extras</a> YouTube channel on May 10 2024, but it was taken down on March 14 2025 due to the <a href="StuffyXP#Closure">closure of the StuffyXP channels</a>. The video showed the website with a separate-page layout, making the Socials page be in <code class="language-plaintext highlighter-rouge">/socials/</code>, etc.</p>
+
+<h3 id="stuffys-website">Stuffy’s Website</h3>
+
+<p>A Public Beta of the new website, being announced in June of the same year, said beta was released to the public in June 22 2024, an archive can be found <a href="https://web.archive.org/web/20240622170614/https://stuffyxp.github.io/">here</a>.</p>
+
+<p>The website was fully launched on June 24 2024, still under the name of “Stuffy’s Website”, ditching the separate-page layout with a new tabbed layout, powered by <a href="https://bulma.io">Bulma</a> 1.0’s tab feature, looking similar to Clyron’s (Lynxmic’s) website. An archive of the website can be found <a href="https://web.archive.org/web/20240624005112/https://stuffyxp.github.io/">here</a>.</p>
+
+<p>The website’s first update, “Week One Update” (shortened to WOU) was released on July of the same year, despite the build string reporting June 24, this update also introduced version codenames.<br />
+The website is still live as an archive on the StuffyXP Website, click <a href="https://horibyte.is-a.dev/stuffyxp-website/stuffywebsitewou">here</a> to visit it.</p>
+
+<h3 id="stuffyxp-website">StuffyXP Website</h3>
+
+<p>Shortly after the rebirth of StuffyXP, the website’s layout changed again to acomodate StuffyXP’s new look, so called “StuffyXP Website” was launched in mid-2024. This was the website version that had the most support, being from August 2024 to December 2024 (4 months).</p>
+
+<p>The website went back to the separate-page layout, with its navbar being similar to that of StuffyWebsite 0.1, the website is still up at <a href="https://horibyte.is-a.dev/stuffyxp-website/">horibyte.is-a.dev/stuffyxp-website</a>, with the latest version being 2.1.2.</p>
+
+<h4 id="update-21x">Update 2.1(.x)</h4>
+
+<p>STXP Website Update 2.1 was the biggest update ever to the STXP Website, updating both the front-end and back-end of the website, it’s the version Horibyte’s most proud of. Updates 2.1.1 and 2.1.2 were minor updates to fix &amp; update some missed things, 2.1.2 was a version to fix the migration issues between <code class="language-plaintext highlighter-rouge">stuffyxp.github.io</code> and <code class="language-plaintext highlighter-rouge">horibyte.is-a.dev</code> in StuffyXP Website and Stuffy’s Website.</p>
+
+<h3 id="horibytes-websitehoriwebsite">Horibyte’s Website/HoriWebsite</h3>
+
+<p>After the StuffyXP ==&gt; Horibyte transition, a new, made from scratch website was in the works by Horibyte to make their personal website be updated with their new them.</p>
+
+<p>The website was essentially done within a week, with that, Horibyte Website 2.2 was released to the public.</p>
+
+<h4 id="update-23">Update 2.3</h4>
+
+<p>Update 2.3 wasn’t a major update by any means, but brang good changes nevertheless</p>
+
+<h4 id="update-24">Update 2.4</h4>
+
+<p>Update 2.4 is the biggest update to HoriWebsite, updating the old Horibyte stuff with a new Comet branding, etc.<br />
+A full changelog can be seen here: <a href="https://horibyte.is-a.dev/changelog/2.4/">horibyte.is-a.dev/changelog/2.4/</a></p>
+
+<p>This update also renamed the website from “Horibyte Website” to “HoriWebsite”, as it was commonly reffered as that, and to also make it fit with the <a href="HoriX_Branding">HoriBranding</a> initiative.</p>
+
+<p>HoriWebsite was always developed alongside Clyron, and the website’s source code is licensed under MIT.</p>
+
+<h4 id="versioning-dillema">Versioning dillema</h4>
+
+<p>HoriWebsite’s version string inherits from its prior version, for example, StuffyXP Website 2.1 –&gt; Horibyte Website 2.2, the build string can be discompossed as the following:</p>
+
+<p><code class="language-plaintext highlighter-rouge">2.4.3565.main.250406-1905</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">2</code> = major version<br />
+<code class="language-plaintext highlighter-rouge">4</code> = minor version<br />
+<code class="language-plaintext highlighter-rouge">3565</code> = build number<br />
+<code class="language-plaintext highlighter-rouge">main</code> = build branch<br />
+<code class="language-plaintext highlighter-rouge">250406</code> = compile date in YYMMDD format, example = 250505: May 5 2025<br />
+<code class="language-plaintext highlighter-rouge">1905</code> = compile time, 24-hour format is used here without the colon, 1905 = 7:05pm<br />
+compile time will always be in the UTC-6 timezone.</p>
+
+<p id="note"><a href="#note1" id="notec1">&sup1;<span></span>&uparrow;</a> Formerly known as <b>StuffyXP Website</b> and <b>Stuffy's Website</b>; Fully known as <b>Horibyte Website</b> as well.</p>
+
+        </div>
+    </div>
+    <p>&nbsp;<br></p>
+  </main>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoriWiki ~ HoriWiki</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>
+        html {
+            background-image: url('https://getmdl.io/assets/demos/transparent.jpg') !important;
+            background-attachment: fixed;
+            background-size: 210%;background-position-x: 45%;
+            /* background-image: linear-gradient(to bottom right, rgb(15, 17, 90), rgb(34, 12, 70)) */
+        }
+    </style>
+</head>
+<body>
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.mdl-layout__header, .is-casting-shadow {
+    display:block !important;
+    word-wrap: normal;
+}
+
+@media screen and (max-width:1080px) {
+  .is-display-none-mobile,
+  .is-hidden-mobile {
+    display:none!important;
+  }
+}
+
+.hatnote {
+  background-color: rgb(240, 236, 236);
+  margin-top: 20px;
+  margin-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-style: italic;
+}
+
+img {
+    box-shadow:0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.2),0 1px 8px 0 rgba(0,0,0,.12);
+    justify-content: center;
+    margin: 0 auto;
+    display: block;
+}
+
+/* why doesnt this fucking work */
+#background-image {
+    filter: blur(5%) !important;
+}
+
+#caption {
+    color:gray;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.mdl-layout__header {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+</style>
+<div class="container" id="background-image">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+        <div class="container is-hidden-mobile">
+      <span id="title" class="mdl-layout-title">HoriWiki Material Design 2014 Beta</span>
+      </div>
+       <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--align-right" style="color: white !important;">
+        <div class="mdl-textfield__holder">
+            
+       <!-- Simple Textfield -->
+            <div class="container" style="padding: 5%; margin:-10px !important;">
+            <form action="results" method="get">
+            <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="search-input" name="q">
+            <label class="mdl-textfield__label" for="sample1"><i style="color: rgb(230,230,230) !important">Search HoriWiki...</i></label>
+            </div>
+            </div>
+            </form>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">HoriWiki Material</span><span class="mdl-layout-title" style="margin-top: -15% !important;">Design 2014 Beta</span>
+    <nav class="mdl-navigation" style="margin-top: -5% !important;">
+      <a class="mdl-navigation__link" href="Main_Page">Main Page</a>
+      <a class="mdl-navigation__link" href="Special%3ASitemap">Sitemap</a>
+      <a class="mdl-navigation__link" href="Contributing_to_HoriWiki">Contribute!</a>
+      <a class="mdl-navigation__link" href="https://horibyte.is-a.dev/wiki/">Old Layout</a>
+      <span style="padding-left:5.5%; color:gray"><br>&copy;2025 HoriWiki Contributors.<br>All Rights Reserved.<br><br>Content & <a href="https://github.com/horibyte/wiki/">source code</a> licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0</a><br><br>HoriWiki Engine <span id="devphase" style="cursor:help;">β</span><div class="mdl-tooltip" data-mdl-for="devphase">Beta</div>2<br><span style="font-size: smaller; color:darkgray !important;">Build 2.0.451.material.250516-1647</span></span>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="box mdl-shadow--8dp" style="background-color: white; width:96%; justify-content: center; display: block; margin: 0 auto; padding: 8px;">
+        <div class="container" style="margin-left: 15px; margin-right: 15px; margin-top: 15px; margin-bottom: 15px">
+            <div class="hatnote">
+            
+        </div>
+      <h4 id="pagetitle" style="color:rgb(27, 122, 167)" >HoriWiki</h4><hr style="color: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))!important;">
+            <p><strong>HoriWiki</strong><a href="#notec1">¹</a> is an open-source online encyclopedia/wiki launched by <a href="Horibyte">Horibyte</a> on 4 May 2025. Its main purpose is documenting meanings of inside jokes to random things from the Horiverse.</p>
+
+<p>Initially it was planned that HoriWiki was to be powered by MediaWiki with a custom user interface, however it was decided to instead build a separate wiki engine deemed the “HoriWiki Engine”, using the Jekyll static site generator.</p>
+
+<p>As of 7 May 2025, HoriWiki, available under the <code class="language-plaintext highlighter-rouge">/wiki/</code> directory of <a href="HoriWebsite">HoriWebsite</a>’s domain (<code class="language-plaintext highlighter-rouge">horibyte.is-a.dev</code>), currently has at least 7 articles and growing.</p>
+
+<p>The HoriWiki Engine reached Alpha development status on 6 May 2025, and is primarily developed by Horibyte, with other tweaks/adjustments having been done by Clyron.</p>
+
+<h3 id="development-history">Development history</h3>
+
+<h4 id="early-april-2025-planning">Early April 2025: planning</h4>
+
+<p>As early as April 2025, Horibyte has thought of making a Horibyte-themed Wikipedia, as a resource to easily get information about anything about their projects, etc.</p>
+
+<p>However, they also thought of how to do it, it could be a self-hosted MediaWiki server, but Horibyte didn’t know how to make it working, this had been thought through the entire month of April.</p>
+
+<h4 id="early-may-2025-development-start">Early May 2025: development start</h4>
+
+<p>During May 1st and May 3rd, a Miraheze-hosted wiki had been in the plans, but after not being parsed correctly due to the bot not wanting to go through it, after said thing, the HoriWiki Engine started development.</p>
+
+<p>Development started with forking <a href="HoriWebsite">HoriWebsite</a> 2.4.3565 since when making a new page with Jekyll, things would break.</p>
+
+<p>These are the earliest available screenshots of said fork:</p>
+
+<p><img src="img/articles/horiwiki/earliest_developer_pre-alpha.png" alt="a screenshot of the earliest developer alpha of horiwiki, changing the branch from main to main-wik and changing the website title to horiwiki" style="width:60%;" title="a screenshot of the earliest developer alpha of horiwiki, changing the branch from main to main-wik and changing the website title to horiwiki" /><br />
+<img src="img/articles/horiwiki/devalpha-info.png" alt="HoriWiki Pre-alpha engine debug buil string" style="width:50%;" title="a screenshot of the earliest developer alpha of horiwiki, changing the branch from main to main-wik and changing the website title to horiwiki" /></p>
+
+<h4 id="pre-alpha-stages-gallery--info">Pre-alpha stages gallery &amp; info</h4>
+
+<p>Real development shortly took place after forking said website, and what you know as the HoriWiki Engine today was developed in 2 days</p>
+
+<p>This “gallery” has screenshots of developer builds of HoriWiki, don’t expect quality images, as they’re taken from Discord messages sent by Horibyte or others.</p>
+
+<h6 id="these-are-all-the-builds-compiled-on-may-4-2025">These are all the builds compiled on May 4 2025:</h6>
+
+<p><img src="img/articles/horiwiki/pa0.1.png" alt="pre-alpha 0.1" style="width:50%;" /></p>
+
+<p>This build basically has wiped all of the HoriWebsite stuff in the front-end, there’s still some HoriWebsite code though.</p>
+
+<p><img src="img/articles/horiwiki/pa0.1-1.png" alt="pre-alpha 0.1" style="width:50%;" /></p>
+
+<p><img src="img/articles/horiwiki/pa0.2.png" alt="pre-alpha 0.2" style="width:50%;" /></p>
+
+<p>These are attempts to get MediaWiki-style nagivation bars.</p>
+
+<p><img src="img/articles/horiwiki/pa0.3.png" alt="pre-alpha 0.3" style="width:50%;" /></p>
+
+<p>Navigation bars are kinda done, this build have multi-colored segments to make it easier for debugging.</p>
+
+<p><img src="img/articles/horiwiki/pa0.4.png" alt="pre-alpha 0.4" style="width:50%;" /></p>
+
+<p>P-A 0.4 is where HoriWiki takes form, as some elements are almost finished.</p>
+
+<p><img src="img/articles/horiwiki/pa0.5.png" alt="pre-alpha 0.5" style="width:50%;" /></p>
+
+<p><img src="img/articles/horiwiki/pa0.5.2.png" alt="pre-alpha 0.5.2" style="width:50%;" /></p>
+
+<p><img src="img/articles/horiwiki/pa0.5.2-1.png" alt="pre-alpha 0.5.2 1" style="width:50%;" /></p>
+
+<p>Builds 0.5.x are the most complete builds of that day, having almost everything right lol</p>
+
+<h6 id="builds-compiled-on-may-5-2025">Builds compiled on May 5 2025:</h6>
+
+<p><img src="img/articles/horiwiki/pa0.5.3-anaheim.png" alt="pre-alpha 0.5.3" style="width:50%;" /></p>
+
+<p>Build 0.5.3 was the most-feature complete pre-alpha build yet, most important things were already done.</p>
+
+<h6 id="build-compiled-on-may-6-7-2025">Build compiled on May 6-7 2025</h6>
+
+<p><img src="img/articles/horiwiki/a1.1.png" alt="alpha 1.1" style="width:50%;" /></p>
+
+<p>Alpha 1.1 is a major milestone in the engine’s development history as it made some really cool updates to the engine itself, including Markdown support!<br />Most fixes were made by Clyron.</p>
+
+<p><img src="img/articles/horiwiki/a1.2-home.png" alt="alpha 1.2" style="width:50%;" /></p>
+
+<p><img src="img/articles/horiwiki/a1.2-dirlist.png" alt="alpha 1.2 sitemap" style="width:50%;" /></p>
+
+<p><img src="img/articles/horiwiki/a1.2-cthrwd.png" alt="alpha 1.2 docs file" style="width:50%;" /></p>
+
+<p>Welcome to the present! Alpha 1.2 <del>is</del> was the current version of this page as of May 7 2025.<br />Nothing really new to engine aside from some bugfixing, still a cool thing nevertheless</p>
+
+<p>Beta 1.0 was released on May 7 2025 as well, including fixes for mobile!!<br />
+<img src="img/articles/horiwiki/b1.0-m.png" alt="beta 1.0 mobile screenshot" style="width:50%;" /></p>
+
+<p>HoriWiki still continues its development period, as there are more things to add to make it a fully complete MediaWiki-like port to Jekyll.</p>
+
+<p>The wiki is still in development :3</p>
+
+<p id="note"><a href="#notec1" id="notec1">&sup1;<span></span>&uparrow;</a> Fully known as <b>Horibyte Wiki</b>.</p>
+
+        </div>
+    </div>
+    <p>&nbsp;<br></p>
+  </main>
+</div>
+</div>
+</body>
+</html>
