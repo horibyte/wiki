@@ -11,7 +11,7 @@ The server runs FabricMC as its base, and is self-hosted by Horibyte themselves.
 
 Horibyte and Clyron are the first members of Horicraft (2), both joined shortly after the server was online for its first time, Horibyte's YouTube channel has a [video](https://www.youtube.com/watch?v=A3bE3yBXduY&t=25s) of both playing in the server in its early days.
 
-## Trivia
+### Trivia
 
 This section contains a list of Horicraft (2) trivia
 
@@ -22,7 +22,7 @@ This section contains a list of Horicraft (2) trivia
 - So far, Cairo Company HQ has been built, DHI HQ is yet to be build on the world.
 - In the [Horiland](Horiland) lore, the world where Horicraft (2) takes place is the [Starlight](Fucking,_Horiland#Starlight) district of [Fucking](Fucking,_Horiland).
 
-## Gallery
+### Gallery
 
 ![a horicraft 2 hill, shader enabled](img/articles/horicraft2/hill.png){: style="width:50%;"}
 <p style="text-align:center;"><i>A Horicraft (2) hill</i></p>

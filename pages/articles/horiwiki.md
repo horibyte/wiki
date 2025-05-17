@@ -13,15 +13,15 @@ As of 7 May 2025, HoriWiki, available under the `/wiki/` directory of [HoriWebsi
 
 The HoriWiki Engine reached Alpha development status on 6 May 2025, and is primarily developed by Horibyte, with other tweaks/adjustments having been done by Clyron.
 
-## Development history
+### Development history
 
-### Early April 2025: planning
+#### Early April 2025: planning
 
 As early as April 2025, Horibyte has thought of making a Horibyte-themed Wikipedia, as a resource to easily get information about anything about their projects, etc.
 
 However, they also thought of how to do it, it could be a self-hosted MediaWiki server, but Horibyte didn't know how to make it working, this had been thought through the entire month of April.
 
-### Early May 2025: development start
+#### Early May 2025: development start
 
 During May 1st and May 3rd, a Miraheze-hosted wiki had been in the plans, but after not being parsed correctly due to the bot not wanting to go through it, after said thing, the HoriWiki Engine started development.
 
@@ -32,14 +32,14 @@ These are the earliest available screenshots of said fork:
 ![a screenshot of the earliest developer alpha of horiwiki, changing the branch from main to main-wik and changing the website title to horiwiki](img/articles/horiwiki/earliest_developer_pre-alpha.png){: style="width:60%;" title="a screenshot of the earliest developer alpha of horiwiki, changing the branch from main to main-wik and changing the website title to horiwiki"}
 ![HoriWiki Pre-alpha engine debug buil string](img/articles/horiwiki/devalpha-info.png){: style="width:50%;" title="a screenshot of the earliest developer alpha of horiwiki, changing the branch from main to main-wik and changing the website title to horiwiki"}
 
-### Pre-alpha stages gallery & info
+#### Pre-alpha stages gallery & info
 
 Real development shortly took place after forking said website, and what you know as the HoriWiki Engine today was developed in 2 days
 
 
 This "gallery" has screenshots of developer builds of HoriWiki, don't expect quality images, as they're taken from Discord messages sent by Horibyte or others.
 
-#### These are all the builds compiled on May 4 2025:
+###### These are all the builds compiled on May 4 2025:
 
 ![pre-alpha 0.1](img/articles/horiwiki/pa0.1.png){: style="width:50%;"}
 
@@ -70,13 +70,13 @@ Builds 0.5.x are the most complete builds of that day, having almost everything 
 
 
 
-#### Builds compiled on May 5 2025:
+###### Builds compiled on May 5 2025:
 
 ![pre-alpha 0.5.3](img/articles/horiwiki/pa0.5.3-anaheim.png){: style="width:50%;"}
 
 Build 0.5.3 was the most-feature complete pre-alpha build yet, most important things were already done.
 
-#### Build compiled on May 6-7 2025
+###### Build compiled on May 6-7 2025
 
 ![alpha 1.1](img/articles/horiwiki/a1.1.png){: style="width:50%;"}
 

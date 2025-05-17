@@ -2,7 +2,7 @@ var intervalId;
 
 function displayUserAgent() {
   var userAgentString = navigator.userAgent;
-  var originalText = '<span>Build 1.0.1.367.main.250515-1422</span><br>';
+  var originalText = '<span>Build 1.0.1.367.material.250515-1615</span><br>';
   var htmlContent = originalText; // Default to original text
 
   const isLocalhost = window.location.hostname === "127.0.0.1" || window.location.hostname === "localhost";

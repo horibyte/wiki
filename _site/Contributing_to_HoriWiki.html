@@ -1,88 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        hr {
-            width:98% !important;
-            justify-content: left;
-            margin-bottom: 2%;
-            margin-top: -0.5%;
-            display: block;
-            float: left;
-        }
-        #pagetitle {
-            margin-top: 1%;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contributing to HoriWiki Documentation ~ HoriWiki</title>
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="me" href="https://wetdry.world/@horibyte">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
-<meta property="og:title" content="HoriWiki">
-<meta property="og:description" content="The official Horibyte Wiki; Beta 1.0">
-<meta property="og:url" content="https://horibyte.is-a.dev/wiki/">
-<meta name="theme-color" content="#ffffff">
-<meta content="website" property="type">
-<meta name="google-site-verification" content="juCkrJsWFUpDDiBrebgAywCVCCE90p5S7yfXBNjIlXQ" />
-
-
-<div class="container is-hidden-mobile">
-<!-- content header -->
- <div class="container">
-    <div class="container" id="topbar" style="background-color: inherit; height:90px !important; color:white !important; text-align: center;">
-        <div class="container">
-            <!-- temporary text, only use span to avoid breaking it -->
-            <span style="font-family: sans-serif; font-size: 60px; text-align: center !important; text-shadow: 0 0 4px gray;"><span style="font-size:5px;text-align: center !important;">&nbsp;</span>HoriWiki</span>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="container" id="sidebar" style="background-color: inherit; width:170px !important; height:100vh !important; color:white !important;">
-        <div class="container" style="padding-left: 5% !important; padding-top: -2%; color: white !important; text-decoration: none; text-align: center; text-shadow: 0 0 5px gray;">
-            <span style="font-size: larger !important;">Links</span><br><br>
-            <span><a href="Main_Page">Main Page</a></span><br>
-            <span><a href="Special%3ASitemap">Sitemap</a></span><br>
-            <span><a href="Contributing_to_HoriWiki">Contribute!</a></span>
-        </div>
-    </div>
-</div>
-</div>
-<div class="container is-hidden-widescreen">
-    <div class="container">
-        <div class="container" id="topbar" style="background-color: inherit; height:90px !important; color:white !important; text-align: center;">
-            <div class="container" id="hotlinks">
-                <!-- temporary text, only use span to avoid breaking it -->
-                <span style="font-family: sans-serif; font-size: 60px; text-align: center !important; text-shadow: 0 0 4px gray;"><span style="font-size:5px;text-align: center !important;">&nbsp;</span>HoriWiki</span><br>
-                <div class="container" style="color:white;">
-                <span style="color:white!important;"><a href="Main_Page">Main Page</a>&nbsp;&nbsp;</span>
-                <span style="color:white!important;"><a href="Special%3ASitemap">Sitemap</a>&nbsp;&nbsp;</span>
-                <span style="color:white!important;"><a href="Contributing_to_HoriWiki">Contribute!</a></span>
-            </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>
+        html {
+            background-image: url('https://getmdl.io/assets/demos/transparent.jpg') !important;
+            background-attachment: fixed;
+            background-size: 210%;background-position-x: 45%;
+            /* background-image: linear-gradient(to bottom right, rgb(15, 17, 90), rgb(34, 12, 70)) */
+        }
+    </style>
 </head>
 <body>
-<div class="container is-hidden-mobile">
-<div class="container" id="main-content" style="background-color: white;">
-    <div class="container" id="page-content" style="text-align: left !important; width:100%; ">
-        <div class="hatnote">
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.mdl-layout__header, .is-casting-shadow {
+    display:block !important;
+    word-wrap: normal;
+}
+
+@media screen and (max-width:1080px) {
+  .is-display-none-mobile,
+  .is-hidden-mobile {
+    display:none!important;
+  }
+}
+
+.hatnote {
+  background-color: rgb(240, 236, 236);
+  margin-top: 20px;
+  margin-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-style: italic;
+}
+
+img {
+    box-shadow:0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.2),0 1px 8px 0 rgba(0,0,0,.12);
+    justify-content: center;
+    margin: 0 auto;
+    display: block;
+}
+
+/* why doesnt this fucking work */
+#background-image {
+    filter: blur(5%) !important;
+}
+
+#caption {
+    color:gray;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.mdl-layout__header {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+</style>
+<div class="container" id="background-image">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+        <div class="container is-hidden-mobile">
+      <span id="title" class="mdl-layout-title">HoriWiki Material Design 2014 Beta</span>
+      </div>
+       <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--align-right" style="color: white !important;">
+        <div class="mdl-textfield__holder">
+            
+       <!-- Simple Textfield -->
+            <div class="container" style="padding: 5%; margin:-10px !important;">
+            <form action="results" method="get">
+            <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="sample1" name="q">
+            <label class="mdl-textfield__label" for="sample1"><i style="color: rgb(230,230,230) !important">Search HoriWiki...</i></label>
+            </div>
+            </div>
+            </form>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">HoriWiki Material</span><span class="mdl-layout-title" style="margin-top: -15% !important;">Design 2014 Beta</span>
+    <nav class="mdl-navigation" style="margin-top: -5% !important;">
+      <a class="mdl-navigation__link" href="Main_Page">Main Page</a>
+      <a class="mdl-navigation__link" href="Special%3ASitemap">Sitemap</a>
+      <a class="mdl-navigation__link" href="Contributing_to_HoriWiki">Contribute!</a>
+      <a class="mdl-navigation__link" href="https://horibyte.is-a.dev/wiki/">Old Layout</a>
+      <span style="padding-left:5.5%; color:gray"><br>&copy;2025 HoriWiki Contributors.<br>All Rights Reserved.<br><br>Content & <a href="https://github.com/horibyte/wiki/">source code</a> licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0</a><br><br>HoriWiki Engine <span id="devphase" style="cursor:help;">β</span><div class="mdl-tooltip" data-mdl-for="devphase">Beta</div>2<br><span style="font-size: smaller; color:darkgray !important;">Build 2.0.451.material.250516-1647</span></span>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="box mdl-shadow--8dp" style="background-color: white; width:96%; justify-content: center; display: block; margin: 0 auto; padding: 8px;">
+        <div class="container" style="margin-left: 15px; margin-right: 15px; margin-top: 15px; margin-bottom: 15px">
+            <div class="hatnote">
             
         </div>
-      <h2 id="pagetitle">Contributing to HoriWiki Documentation</h2><hr style="color: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))!important;">
-<p>Welcome to HoriWiki! This page contains information &amp; documentation on adding, creating and/or modifying HoriWiki articles.</p>
+      <h4 id="pagetitle" style="color:rgb(27, 122, 167)" >Contributing to HoriWiki Documentation</h4><hr style="color: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))!important;">
+            <p>Welcome to HoriWiki! This page contains information &amp; documentation on adding, creating and/or modifying HoriWiki articles.</p>
 
-<h2 id="pre-requisites">Pre-requisites</h2>
+<h4 id="pre-requisites">Pre-requisites</h4>
 
 <p>To contribute a HoriWiki article, you need a GitHub account to suggest an article (dynamic publishing will not be available due to GitHub Pages and HTML+CSS+JS limitations).</p>
 
 <p>If you want your articles to be published faster, build up a wiki reputation so you can be added as a collaborator to the repository, in order to build one, you might just suggest over time, following the rules/code of conduct, which in that case…</p>
 
-<h2 id="code-of-conduct">Code of Conduct</h2>
+<h4 id="code-of-conduct">Code of Conduct</h4>
 
 <p>To prevent any sort of unwanted articles or behavior, we have a code of conduct to help regulate these issues, these are needed guidelines to add, publish and modify articles.</p>
 
@@ -100,9 +144,9 @@
 
 <p>If you break any of these, your ability to add new articles will be removed.</p>
 
-<h2 id="making-an-article">Making an article</h2>
+<h4 id="making-an-article">Making an article</h4>
 
-<h3 id="regular">Regular</h3>
+<h5 id="regular">Regular</h5>
 
 <p>To suggest an article, you can make a pull request of the wiki’s main repo (<a href="https://github.com/horibyte/wiki">github.com/horibyte/wiki</a>), then add your suggested article to the <code class="language-plaintext highlighter-rouge">pages</code> directory on the root of the directory tree.<br />Your file should have this structure:</p>
 
@@ -114,11 +158,11 @@
 
 <p>Appending the <code class="language-plaintext highlighter-rouge">.html</code> file extension on the <code class="language-plaintext highlighter-rouge">permalink</code> is not needed, but it is recommended to make the page less-broken, <code class="language-plaintext highlighter-rouge">//</code>s are comments.<br />The title of the page should be the same on the permalink, but the spaces should be replaced with underscores.</p>
 
-<h3 id="administratorscollaborators-on-the-repo">Administrators/Collaborators (on the repo)</h3>
+<h5 id="administratorscollaborators-on-the-repo">Administrators/Collaborators (on the repo)</h5>
 
 <p>The process is the same, but does not require making a pull request, as you should be able to upload the file directly to the repo.</p>
 
-<h2 id="markdown-support-beta">Markdown support (BETA)</h2>
+<h4 id="markdown-support-beta">Markdown support (BETA)</h4>
 <p>These are the Markdown syntaxes that are compatible with this wiki’s engine (as of Alpha 1.1)</p>
 
 <p>Pre-Alpha 0.2 to 0.5.3 used HTML Tags, Markdown support added by Clyron. (thanks!)</p>
@@ -160,119 +204,11 @@
 
 <p>The reason this is needed is due to how links work since this is a separate hosted repo being in a same domain.</p>
 
-<p></p>
-</div>
-</div>
-</div>
-<div class="container is-hidden-widescreen">
-    <div class="container" id="main-content-m" style="background-color: white;">
-        <div class="container" id="page-content" style="text-align: left !important; width:100%; ">
-            <div class="hatnote-m">
-                
-            </div>
-          <h2 id="pagetitle">Contributing to HoriWiki Documentation</h2><hr>
-    <p>Welcome to HoriWiki! This page contains information &amp; documentation on adding, creating and/or modifying HoriWiki articles.</p>
-
-<h2 id="pre-requisites">Pre-requisites</h2>
-
-<p>To contribute a HoriWiki article, you need a GitHub account to suggest an article (dynamic publishing will not be available due to GitHub Pages and HTML+CSS+JS limitations).</p>
-
-<p>If you want your articles to be published faster, build up a wiki reputation so you can be added as a collaborator to the repository, in order to build one, you might just suggest over time, following the rules/code of conduct, which in that case…</p>
-
-<h2 id="code-of-conduct">Code of Conduct</h2>
-
-<p>To prevent any sort of unwanted articles or behavior, we have a code of conduct to help regulate these issues, these are needed guidelines to add, publish and modify articles.</p>
-
-<p>You may not:</p>
-
-<ul>
-  <li>add nor publish 18+/mature content to any of the articles.</li>
-  <li>go out of topic, if you’re making an article about something, stick to that something.</li>
-  <li>modify other articles without permission.</li>
-  <li>vandalize any of the articles.</li>
-  <li>add false information to articles, nor make fake articles.</li>
-  <li>cross personal boundaries, if some info gets too personal, please remove said content as of the person’s request. (this also applies to admins)</li>
-  <li>add anything that is not related to Horibyte.</li>
-</ul>
-
-<p>If you break any of these, your ability to add new articles will be removed.</p>
-
-<h2 id="making-an-article">Making an article</h2>
-
-<h3 id="regular">Regular</h3>
-
-<p>To suggest an article, you can make a pull request of the wiki’s main repo (<a href="https://github.com/horibyte/wiki">github.com/horibyte/wiki</a>), then add your suggested article to the <code class="language-plaintext highlighter-rouge">pages</code> directory on the root of the directory tree.<br />Your file should have this structure:</p>
-
-<p><code class="language-plaintext highlighter-rouge">---</code><br />
-<code class="language-plaintext highlighter-rouge">title: *Your title here*</code><br />
-<code class="language-plaintext highlighter-rouge">layout: main // &lt;-- do not change that</code><br />
-<code class="language-plaintext highlighter-rouge">permalink: Your_title_here</code><br />
-<code class="language-plaintext highlighter-rouge">---</code></p>
-
-<p>Appending the <code class="language-plaintext highlighter-rouge">.html</code> file extension on the <code class="language-plaintext highlighter-rouge">permalink</code> is not needed, but it is recommended to make the page less-broken, <code class="language-plaintext highlighter-rouge">//</code>s are comments.<br />The title of the page should be the same on the permalink, but the spaces should be replaced with underscores.</p>
-
-<h3 id="administratorscollaborators-on-the-repo">Administrators/Collaborators (on the repo)</h3>
-
-<p>The process is the same, but does not require making a pull request, as you should be able to upload the file directly to the repo.</p>
-
-<h2 id="markdown-support-beta">Markdown support (BETA)</h2>
-<p>These are the Markdown syntaxes that are compatible with this wiki’s engine (as of Alpha 1.1)</p>
-
-<p>Pre-Alpha 0.2 to 0.5.3 used HTML Tags, Markdown support added by Clyron. (thanks!)</p>
-
-<p>List of compatible syntaxes:</p>
-
-<ul>
-  <li><strong>Bold</strong> (<code class="language-plaintext highlighter-rouge">**text**</code>)</li>
-  <li><em>Italic</em> (<code class="language-plaintext highlighter-rouge">*text*</code>)</li>
-  <li><del>Strikethrough</del> (<code class="language-plaintext highlighter-rouge">~~text~~</code>)</li>
-  <li><a href="https://example.com">Link</a> (<code class="language-plaintext highlighter-rouge">[text](https://example.com)</code>)</li>
-  <li>Header (<code class="language-plaintext highlighter-rouge"># text</code>)</li>
-  <li>Header 2 (<code class="language-plaintext highlighter-rouge">## text</code>)</li>
-  <li>Header 3 (<code class="language-plaintext highlighter-rouge">### text</code>)</li>
-  <li>Header 4 (<code class="language-plaintext highlighter-rouge">#### text</code>)</li>
-  <li>Header 5 (<code class="language-plaintext highlighter-rouge">##### text</code>)</li>
-  <li>Header 6 (<code class="language-plaintext highlighter-rouge">###### text</code>)</li>
-  <li>Code (`text`)</li>
-  <li>
-    <p>Blockqoute (<code class="language-plaintext highlighter-rouge">&gt; text</code>)</p>
-  </li>
-  <li>List item (<code class="language-plaintext highlighter-rouge">- text</code>)
-    <ul>
-      <li>List sub-item (<code class="language-plaintext highlighter-rouge">  - text</code>)
-        <ol>
-          <li>Number item (<code class="language-plaintext highlighter-rouge">1. text</code>)</li>
-        </ol>
-      </li>
-    </ul>
-  </li>
-  <li>Image (<code class="language-plaintext highlighter-rouge">![alt text]([pathtoimage]){: *html code here*}</code>)<br />
-<img src="img/articles/a_emoji/a_horicraft.png" alt="horicraft A" style="width:25% !important;" /><br />
-(^ example of image)</li>
-</ul>
-
-<p>When linking to paths, do not use <code class="language-plaintext highlighter-rouge">/</code> at the start of the path:<br />
-❌: <code class="language-plaintext highlighter-rouge">/img/horibyte_moment/a_win1.png</code><br />
-✅: <code class="language-plaintext highlighter-rouge">img/horibyte_moment/a_win1.png</code></p>
-
-<p>The reason this is needed is due to how links work since this is a separate hosted repo being in a same domain.</p>
-
-    <p></p>
+        </div>
     </div>
-    </div>
+    <p>&nbsp;<br></p>
+  </main>
 </div>
-<div class="container" id="footer" style="text-shadow: 0 0 2px gray">
-    <p>&copy;2025 The HoriWiki Contributors. All Rights Reserved.<br>Content and source code is licensed under CC-BY-SA-4.0<br><span style="font-size:small;">HoriWiki Engine <span style="cursor:pointer;" title="Beta">β</span>1.0.1</span><br><span id="userAgent" style="font-size:small;"></span><span style="font-size:x-small;"><i>Made with &lt;3 by Horibyte & Clyron.</i></span></p>
-    <!-- forked from Horibyte Website 2.4.3565 -->
-     <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img title="Creative Commons Attribution-ShareAlike 4.0" src="img/by-sa.png" alt="Creative Commons CC BY-SA 4.0 Button" height="31" style="float:right;margin-right:1.5%;margin-bottom:0.5%; box-shadow: 0 0 4px white;"></a>
-     <script src="js/info.js"></script>
 </div>
-
-
-<style>
-    code {
-        font-family: 'Consolas', 'Hack' !important;
-    }
-    </style>
 </body>
 </html>

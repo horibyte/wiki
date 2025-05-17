@@ -1,118 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        hr {
-            width:98% !important;
-            justify-content: left;
-            margin-bottom: 2%;
-            margin-top: -0.5%;
-            display: block;
-            float: left;
-        }
-        #pagetitle {
-            margin-top: 1%;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project Arctic ~ HoriWiki</title>
-    <link rel="shortcut icon" href="" type="image/x-icon">
-    <link rel="me" href="https://wetdry.world/@horibyte">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
-<meta property="og:title" content="HoriWiki">
-<meta property="og:description" content="The official Horibyte Wiki; Beta 1.0">
-<meta property="og:url" content="https://horibyte.is-a.dev/wiki/">
-<meta name="theme-color" content="#ffffff">
-<meta content="website" property="type">
-<meta name="google-site-verification" content="juCkrJsWFUpDDiBrebgAywCVCCE90p5S7yfXBNjIlXQ" />
-
-
-<div class="container is-hidden-mobile">
-<!-- content header -->
- <div class="container">
-    <div class="container" id="topbar" style="background-color: inherit; height:90px !important; color:white !important; text-align: center;">
-        <div class="container">
-            <!-- temporary text, only use span to avoid breaking it -->
-            <span style="font-family: sans-serif; font-size: 60px; text-align: center !important; text-shadow: 0 0 4px gray;"><span style="font-size:5px;text-align: center !important;">&nbsp;</span>HoriWiki</span>
-        </div>
-    </div>
-</div>
-<div class="container">
-    <div class="container" id="sidebar" style="background-color: inherit; width:170px !important; height:100vh !important; color:white !important;">
-        <div class="container" style="padding-left: 5% !important; padding-top: -2%; color: white !important; text-decoration: none; text-align: center; text-shadow: 0 0 5px gray;">
-            <span style="font-size: larger !important;">Links</span><br><br>
-            <span><a href="Main_Page">Main Page</a></span><br>
-            <span><a href="Special%3ASitemap">Sitemap</a></span><br>
-            <span><a href="Contributing_to_HoriWiki">Contribute!</a></span>
-        </div>
-    </div>
-</div>
-</div>
-<div class="container is-hidden-widescreen">
-    <div class="container">
-        <div class="container" id="topbar" style="background-color: inherit; height:90px !important; color:white !important; text-align: center;">
-            <div class="container" id="hotlinks">
-                <!-- temporary text, only use span to avoid breaking it -->
-                <span style="font-family: sans-serif; font-size: 60px; text-align: center !important; text-shadow: 0 0 4px gray;"><span style="font-size:5px;text-align: center !important;">&nbsp;</span>HoriWiki</span><br>
-                <div class="container" style="color:white;">
-                <span style="color:white!important;"><a href="Main_Page">Main Page</a>&nbsp;&nbsp;</span>
-                <span style="color:white!important;"><a href="Special%3ASitemap">Sitemap</a>&nbsp;&nbsp;</span>
-                <span style="color:white!important;"><a href="Contributing_to_HoriWiki">Contribute!</a></span>
-            </div>
-            </div>
-        </div>
-    </div>
-</div>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>
+        html {
+            background-image: url('https://getmdl.io/assets/demos/transparent.jpg') !important;
+            background-attachment: fixed;
+            background-size: 210%;background-position-x: 45%;
+            /* background-image: linear-gradient(to bottom right, rgb(15, 17, 90), rgb(34, 12, 70)) */
+        }
+    </style>
 </head>
 <body>
-<div class="container is-hidden-mobile">
-<div class="container" id="main-content" style="background-color: white;">
-    <div class="container" id="page-content" style="text-align: left !important; width:100%; ">
-        <div class="hatnote">
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.mdl-layout__header, .is-casting-shadow {
+    display:block !important;
+    word-wrap: normal;
+}
+
+@media screen and (max-width:1080px) {
+  .is-display-none-mobile,
+  .is-hidden-mobile {
+    display:none!important;
+  }
+}
+
+.hatnote {
+  background-color: rgb(240, 236, 236);
+  margin-top: 20px;
+  margin-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-style: italic;
+}
+
+img {
+    box-shadow:0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.2),0 1px 8px 0 rgba(0,0,0,.12);
+    justify-content: center;
+    margin: 0 auto;
+    display: block;
+}
+
+/* why doesnt this fucking work */
+#background-image {
+    filter: blur(5%) !important;
+}
+
+#caption {
+    color:gray;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.mdl-layout__header {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+</style>
+<div class="container" id="background-image">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+        <div class="container is-hidden-mobile">
+      <span id="title" class="mdl-layout-title">HoriWiki Material Design 2014 Beta</span>
+      </div>
+       <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--align-right" style="color: white !important;">
+        <div class="mdl-textfield__holder">
+            
+       <!-- Simple Textfield -->
+            <div class="container" style="padding: 5%; margin:-10px !important;">
+            <form action="results" method="get">
+            <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="sample1" name="q">
+            <label class="mdl-textfield__label" for="sample1"><i style="color: rgb(230,230,230) !important">Search HoriWiki...</i></label>
+            </div>
+            </div>
+            </form>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">HoriWiki Material</span><span class="mdl-layout-title" style="margin-top: -15% !important;">Design 2014 Beta</span>
+    <nav class="mdl-navigation" style="margin-top: -5% !important;">
+      <a class="mdl-navigation__link" href="Main_Page">Main Page</a>
+      <a class="mdl-navigation__link" href="Special%3ASitemap">Sitemap</a>
+      <a class="mdl-navigation__link" href="Contributing_to_HoriWiki">Contribute!</a>
+      <a class="mdl-navigation__link" href="https://horibyte.is-a.dev/wiki/">Old Layout</a>
+      <span style="padding-left:5.5%; color:gray"><br>&copy;2025 HoriWiki Contributors.<br>All Rights Reserved.<br><br>Content & <a href="https://github.com/horibyte/wiki/">source code</a> licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0</a><br><br>HoriWiki Engine <span id="devphase" style="cursor:help;">β</span><div class="mdl-tooltip" data-mdl-for="devphase">Beta</div>2<br><span style="font-size: smaller; color:darkgray !important;">Build 2.0.451.material.250516-1647</span></span>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="box mdl-shadow--8dp" style="background-color: white; width:96%; justify-content: center; display: block; margin: 0 auto; padding: 8px;">
+        <div class="container" style="margin-left: 15px; margin-right: 15px; margin-top: 15px; margin-bottom: 15px">
+            <div class="hatnote">
             This article is about a future project by <a href="Horibyte">Horibyte</a>, information may change over time.
         </div>
-      <h2 id="pagetitle">Project Arctic</h2><hr style="color: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))!important;">
-<p><strong>Project Arctic</strong><a href="#notec1" id="note1">¹</a> is an unreleased operating system by <a href="Horibyte">Horibyte</a> originally ““announced”” on Early 2024<a href="#notec2" id="note2">²</a>.<br />A lot of references to Arctic have been in Horibyte’s messages and works to the point of making a mockup of said OS in 2024…before a <a href="Horibyte_Moments">Horibyte moment</a> interrupted the process.</p>
+      <h4 id="pagetitle" style="color:rgb(27, 122, 167)" >Project Arctic</h4><hr style="color: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))!important;">
+            <p><strong>Project Arctic</strong><a href="#notec1" id="note1">¹</a> is an unreleased operating system by <a href="Horibyte">Horibyte</a> originally ““announced”” on Early 2024<a href="#notec2" id="note2">²</a>.<br />A lot of references to Arctic have been in Horibyte’s messages and works to the point of making a mockup of said OS in 2024…before a <a href="Horibyte_Moments">Horibyte moment</a> interrupted the process.</p>
 
 <p>The OS’ kernel has been compiled 2 total times in early 2025 but never has been publicly shared by Horibyte due to them losing the <code class="language-plaintext highlighter-rouge">kernel.bin</code> file(s).</p>
 
 <p><span id="note"><a href="#note1" id="notec1">¹↑</a> Also known as <b>Horibyte LeafyOS</b></span><br /><span id="note"><a href="#note2" id="notec2">²↑</a> Due to multiple resources announcing Project Arctic, the exact announcement date is unknown, Early 2024 is an estimate.</span></p>
 
-<p></p>
-</div>
-</div>
-</div>
-<div class="container is-hidden-widescreen">
-    <div class="container" id="main-content-m" style="background-color: white;">
-        <div class="container" id="page-content" style="text-align: left !important; width:100%; ">
-            <div class="hatnote-m">
-                This article is about a future project by <a href="Horibyte">Horibyte</a>, information may change over time.
-            </div>
-          <h2 id="pagetitle">Project Arctic</h2><hr>
-    <p><strong>Project Arctic</strong><a href="#notec1" id="note1">¹</a> is an unreleased operating system by <a href="Horibyte">Horibyte</a> originally ““announced”” on Early 2024<a href="#notec2" id="note2">²</a>.<br />A lot of references to Arctic have been in Horibyte’s messages and works to the point of making a mockup of said OS in 2024…before a <a href="Horibyte_Moments">Horibyte moment</a> interrupted the process.</p>
-
-<p>The OS’ kernel has been compiled 2 total times in early 2025 but never has been publicly shared by Horibyte due to them losing the <code class="language-plaintext highlighter-rouge">kernel.bin</code> file(s).</p>
-
-<p><span id="note"><a href="#note1" id="notec1">¹↑</a> Also known as <b>Horibyte LeafyOS</b></span><br /><span id="note"><a href="#note2" id="notec2">²↑</a> Due to multiple resources announcing Project Arctic, the exact announcement date is unknown, Early 2024 is an estimate.</span></p>
-
-    <p></p>
+        </div>
     </div>
-    </div>
+    <p>&nbsp;<br></p>
+  </main>
 </div>
-<div class="container" id="footer" style="text-shadow: 0 0 2px gray">
-    <p>&copy;2025 The HoriWiki Contributors. All Rights Reserved.<br>Content and source code is licensed under CC-BY-SA-4.0<br><span style="font-size:small;">HoriWiki Engine <span style="cursor:pointer;" title="Beta">β</span>1.0.1</span><br><span id="userAgent" style="font-size:small;"></span><span style="font-size:x-small;"><i>Made with &lt;3 by Horibyte & Clyron.</i></span></p>
-    <!-- forked from Horibyte Website 2.4.3565 -->
-     <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img title="Creative Commons Attribution-ShareAlike 4.0" src="img/by-sa.png" alt="Creative Commons CC BY-SA 4.0 Button" height="31" style="float:right;margin-right:1.5%;margin-bottom:0.5%; box-shadow: 0 0 4px white;"></a>
-     <script src="js/info.js"></script>
 </div>
-
-
-<style>
-    code {
-        font-family: 'Consolas', 'Hack' !important;
-    }
-    </style>
 </body>
 </html>

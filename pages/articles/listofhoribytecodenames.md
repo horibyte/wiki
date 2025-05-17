@@ -9,14 +9,14 @@ This article shows a list of codenames used by [Horibyte](Horibyte) in their pro
 
 [A](#A) · [B](#B) · [D](#D) · [H](#H) · [L](#L) · [N](#N) · [O](#O) · [Q](#Q) · [S](#S) · [W](#W) · [Z](#Z)
 
-<h2 id="A">A</h2>
+<h4 id="A">A</h4>
 <hr>
 
-<h3 id="Arctic">Arctic</h3>
+<h5 id="Arctic">Arctic</h5>
 
 Codename of a future, unreleased operating system by Horibyte, also see [LeafyOS](#LeafyOS) and [Project Arctic](Project_Arctic).
 
-<h3 id="Atheros">Atheros</h3>
+<h5 id="Atheros">Atheros</h5>
 
 Another suggested codename for Horibyte Arctic, later scrapped due to the name being of a real company now owned by Qualcomm.
 
@@ -24,79 +24,79 @@ Another suggested codename for Horibyte Arctic, later scrapped due to the name b
 
 *- Horibyte*
 
-<h3 id="Atsura">Atsura</h3>
+<h5 id="Atsura">Atsura</h5>
 
 Preliminary name for the final product of the merge between [Horicraft (1)](Horicraft) and [Horicraft (2)](Horicraft_(2)).
 
-<h2 id="B">B</h2>
+<h4 id="B">B</h4>
 <hr>
 
-<h3 id="BetterLateThanNever">Better Late than Never</h3>
+<h5 id="BetterLateThanNever">Better Late than Never</h5>
 
 StuffyXP Website Update 2.1, referencing that the update was delayed multiple times due to Horibyte not having a PC to work on the update.
 
-<h2 id="D">D</h2>
+<h4 id="D">D</h4>
 <hr>
 
-<h3 id="DogUI">DogUI</h3>
+<h5 id="DogUI">DogUI</h5>
 
 Suggested name for the user interface component in Horibyte Arctic, also referencing Horibyte's dog plushie, [Dogui](Dogui).
 
-<h2 id="H">H</h2>
+<h4 id="H">H</h4>
 <hr>
 
-<h3 id="HappyNewYear!">Happy New Year!</h3>
+<h5 id="HappyNewYear!">Happy New Year!</h5>
 
 StuffyXP Website Update 2.1.1, referencing that the update was released on New Years Eve, but was actually released on Christmas Eve (Dec 24).
 
-<h2 id="L">L</h2>
+<h4 id="L">L</h4>
 <hr>
 
-<h3 id="LeafyOS">LeafyOS</h3>
+<h5 id="LeafyOS">LeafyOS</h5>
 
 Original name for Horibyte's unreleased operating system, later renamed to [Arctic](#Arctic), also see [Project Arctic](Project_Arctic).
 
-<h2 id="N">N</h2>
+<h4 id="N">N</h4>
 <hr>
 
-<h3 id="NewCoatOfPaint">New Coat of Paint</h3>
+<h5 id="NewCoatOfPaint">New Coat of Paint</h5>
 
 StuffyXP Website Update 2.0.[&sup1;](#notec1){: id="note1"}
 
-<h2 id="O">O</h2>
+<h4 id="O">O</h4>
 <hr>
 
-<h3 id="OneLastFix">One Last Fix</h3>
+<h5 id="OneLastFix">One Last Fix</h5>
 
 StuffyXP Website Update 2.1.2, the last update to StuffyXP Website after being replaced with HoriWebsite.
 
-<h2 id="Q">Q</h2>
+<h4 id="Q">Q</h4>
 <hr>
 
-<h3 id="Qattah">Qattah</h3>
+<h5 id="Qattah">Qattah</h5>
 
 [Stuffy's Place](Stuffys_Place).
 
-<h2 id="S">S</h2>
+<h4 id="S">S</h4>
 <hr>
 
-<h3 id="StuffyXP2">StuffyXP 2</h3>
+<h5 id="StuffyXP2">StuffyXP 2</h5>
 
 Horibyte Website Alpha. *Not related to a spiritual sucessor to the StuffyXP Channel, which does not exist nor a public website codename*.
 
-<h2 id="W">W</h2>
+<h4 id="W">W</h4>
 <hr>
 
-<h3 id="WeekOneUpdate">Week One Update</h3>
+<h5 id="WeekOneUpdate">Week One Update</h5>
 
 Stuffy's Website Update 1.1.
 
 **Note**: *Codenames for StuffyXPWebsite were introduced in this version before being scrapped in HoriWebsite, thus HoriWebsite & Stuffy Website 1.0 don't have a codename*.
 
-<h2 id="Z">Z</h2>
+<h4 id="Z">Z</h4>
 <hr>
 
-<h3 id="Zetta">Zetta</h3>
+<h5 id="Zetta">Zetta</h5>
 
 Cancelled engine by Horibyte that would later on merge to the HoriWiki engine.
 

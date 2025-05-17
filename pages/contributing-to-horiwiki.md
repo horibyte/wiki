@@ -6,13 +6,13 @@ permalink: Contributing_to_HoriWiki
 
 Welcome to HoriWiki! This page contains information & documentation on adding, creating and/or modifying HoriWiki articles.
 
-## Pre-requisites
+#### Pre-requisites
 
 To contribute a HoriWiki article, you need a GitHub account to suggest an article (dynamic publishing will not be available due to GitHub Pages and HTML+CSS+JS limitations).
 
 If you want your articles to be published faster, build up a wiki reputation so you can be added as a collaborator to the repository, in order to build one, you might just suggest over time, following the rules/code of conduct, which in that case...
 
-## Code of Conduct
+#### Code of Conduct
 
 To prevent any sort of unwanted articles or behavior, we have a code of conduct to help regulate these issues, these are needed guidelines to add, publish and modify articles.
 
@@ -28,9 +28,9 @@ You may not:
 
 If you break any of these, your ability to add new articles will be removed.
 
-## Making an article
+#### Making an article
 
-### Regular
+##### Regular
 
 To suggest an article, you can make a pull request of the wiki's main repo ([github.com/horibyte/wiki](https://github.com/horibyte/wiki)), then add your suggested article to the `pages` directory on the root of the directory tree.<br>Your file should have this structure:
 
@@ -43,11 +43,11 @@ To suggest an article, you can make a pull request of the wiki's main repo ([git
 
 Appending the `.html` file extension on the `permalink` is not needed, but it is recommended to make the page less-broken, `//`s are comments.<br>The title of the page should be the same on the permalink, but the spaces should be replaced with underscores.
 
-### Administrators/Collaborators (on the repo)
+##### Administrators/Collaborators (on the repo)
 
 The process is the same, but does not require making a pull request, as you should be able to upload the file directly to the repo.
 
-## Markdown support (BETA)
+#### Markdown support (BETA)
 These are the Markdown syntaxes that are compatible with this wiki's engine (as of Alpha 1.1)
 
 Pre-Alpha 0.2 to 0.5.3 used HTML Tags, Markdown support added by Clyron. (thanks!)

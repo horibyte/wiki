@@ -1,0 +1,75 @@
+---
+layout: main
+title: Search Results
+permalink: /results
+search_exclude: true
+---
+
+<div id="results-container">
+  </div>
+
+<script src="js/search.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const query = urlParams.get('q');
+  const searchInput = document.getElementById('search-input');
+  const resultsContainer = document.getElementById('results-container');
+  const searchDataURL = 'search.json';
+  let searchIndex = [];
+
+  if (searchInput) {
+    searchInput.value = query || '';
+    searchInput.addEventListener('input', function() {
+      const newQuery = this.value.toLowerCase().trim();
+      displayResults(search(newQuery));
+
+      // Update the URL dynamically
+      const newUrl = new URL(window.location.href);
+      newUrl.searchParams.set('q', newQuery);
+      window.history.pushState({ path: newUrl.href }, '', newUrl.href);
+    });
+  }
+
+  fetch(searchDataURL)
+    .then(response => response.json())
+    .then(data => {
+      searchIndex = data;
+      if (query) {
+        displayResults(search(query));
+      } else {
+        resultsContainer.innerHTML = '<p>Please enter a search query.</p>';
+      }
+    });
+
+  function search(query) {
+    if (!query) {
+      return [];
+    }
+    return searchIndex.filter(item => {
+      return item.title.toLowerCase().includes(query.toLowerCase());
+    });
+  }
+
+  function displayResults(results) {
+    resultsContainer.innerHTML = '';
+    if (results.length === 0 && query) {
+      resultsContainer.innerHTML = `<p>No results found for "${query}".</p>`;
+      return;
+    } else if (!query) {
+      resultsContainer.innerHTML = '<p>Please enter a search query.</p>';
+      return;
+    }
+    const ul = document.createElement('ul');
+    results.forEach(result => {
+      const li = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = result.url;
+      link.textContent = result.title;
+      li.appendChild(link);
+      ul.appendChild(li);
+    });
+    resultsContainer.appendChild(ul);
+  }
+});
+</script>

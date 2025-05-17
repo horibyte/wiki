@@ -16,13 +16,13 @@ As of March 2025, Dogui Heavy Industries has changed from a Limited Company to a
 <br>![Headquarters of DHI Inc. in Fucking, Horiland](img/articles/dhi/hq.png){: title="Headquarters of DHI Inc. in Fucking, Horiland" width="50%"}
 <p id="caption">Headquarters of DHI Inc. in Fucking, Horiland</p>
 
-## Subsidiaries
-### DHI Turtles
+### Subsidiaries
+#### DHI Turtles
 **DHI Turtles Inc.** (fully known as *Dogui Heavy Industries Limited: Turtle Research & Observatory Center LLC*) is a subsidiary of Dogui Heavy Industries Incorporated, its main goal is to rescue, preserve and study Horilandese turtles.
 <br>![Headquarters of DHI Turtles on the coast of Fucking, Horiland](img/articles/dhi/hqturtles.png){: title="Headquarters of DHI Turtles on the coast of Fucking, Horiland" width="50%"}
 <p id="caption">Headquarters of DHI Turtles in Fucking, Horiland</p>
 
-### DHI Movies
+#### DHI Movies
 **DHI Movies Corp.** (fully known as *Dogui Heavy Industries Limited: Movie Film-making & Studio Corporation*) is a Horilandese film-making company, subsidiary of Dogui Heavy Industries Incorporated. The company's headquarters are located in Redlock, [Ture](Ture,_Horiland), Horiland.
 
 DHI Movies Corp. has released various films related to the Horiland country, honorable filmography are "*Ture: The Nuke of the '25*" and its prequel "*Jell: a Ture of the Past*", both recieving a box office amount of [H.](Horidollar) 459M separately.

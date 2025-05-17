@@ -7,7 +7,7 @@ hatnote: Not to be confused with <a href="Horibyte_Power">Horibyte Power</a>.
 
 **Horibyte Moments** (*formerly known as **Stuffy Moments***) are moments when Horibyte breaks any sort of tech (that being software, hardware, services, etc) in an unexpected way. They were introduced in January 2024.
 
-### Types of Horibyte moments
+#### Types of Horibyte moments
 Horibyte moments can vary from a range of 'moment levels', with that being the following:
  * **Errors**: Said moments can be various errors, being just normal ones, or something extremely rare.<br>
  ![Dolphin warning: Invalid state, with an OK button and a Ignore for this session button but the text is cropped due to the button's size](img/articles/horibyte_moments/error.png){: style="width:70%" title="Dolphin warning: Invalid state, with an OK button and a Ignore for this session button but the text is cropped due to the button's size"}
@@ -25,7 +25,7 @@ Horibyte moments can vary from a range of 'moment levels', with that being the f
 
 * **Software Mistakes**: Some temporary string here.
 
-### Gallery of Horibyte Moments
+#### Gallery of Horibyte Moments
 
 ![A Minecraft 1.0 bug where Steve's body and head are gone, same with the Achievement panel background and the items on the hotbar](img/articles/horibyte_moments/mc1.0bug.png){: style="width:70%" title="A Minecraft 1.0 bug where Steve's body and head are gone, same with the Achievement panel background and the items on the hotbar"}
 <p id="caption">A MC 1.0 window where the Steve model, hotbar and achievement get panel are all broken.</p>

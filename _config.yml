@@ -18,9 +18,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Horibyte
+title: Horibyte Wiki Beta
 email: thehoribyte@gmail.com
-description: "Horibyte's personal blog."
+description: "Why are you having this lol"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://horibyte.is-a.dev/wiki" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: Horibyte
@@ -32,12 +32,11 @@ plugins:
   - jekyll-feed
 
 # Include from processing.
-include:
-  - stuffyxp_data.json
-
 kramdown:
   input: GFM
   hard_wrap: true
+include:
+  - search.json
 
 # Exclude from processing.
 # The following items will not be processed, by default.

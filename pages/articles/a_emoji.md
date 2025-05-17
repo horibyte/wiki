@@ -10,7 +10,7 @@ hatnote:
 It is one of the earliest Horibyte memes, introduced in December 2023[&sup1;](#notec1), along with [Horibyte Moments](Horibyte_Moments/). Initially regarded by Horibyte as a "shouting emoji", the A Button emoji has since became popular among Horifans, and over time variations of it have been made by Horibyte or others.
 ![](img/articles/a_emoji/1.jpg){: width="30%"}
 
-### Gallery of Fanmade 🅰️s
+##### Gallery of Fanmade 🅰️s
 <div id="gallery-box">
    <div class="container">
         <img src="img/articles/a_emoji/a_win1.png">
