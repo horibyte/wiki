@@ -2,8 +2,13 @@ name: Jekyll Deploy to GitHub Pages
 
 on:
   push:
-    branches: [material] # Or your default branch name (e.g., master)
-  workflow_dispatch: # Allows manual triggering from the GitHub UI
+    branches: [material] # Or your default branch name
+  workflow_dispatch:
+
+permissions:
+  id-token: write
+  pages: write
+  contents: read
 
 jobs:
   build-and-deploy:
@@ -15,7 +20,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.3.4 # Or your preferred Ruby version
+          ruby-version: 3.3.4
 
       - name: Install dependencies
         run: |
