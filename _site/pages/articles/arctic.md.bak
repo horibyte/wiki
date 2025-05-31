@@ -1,0 +1,99 @@
+<!-- This is the original version of the Arctic article, before being re-written into what it is today -->
+
+---
+layout: main
+title: Horibyte Arctic 
+hatnote: This article is about a work-in-progress project by <a href="Horibyte">Horibyte</a>, thus is not finished.
+---
+
+**Horibyte Arctic**[&sup1;](#notec1){: id="note1"} is an open-source operating system mantained and developed by [Horibyte](Horibyte) for personal computers. It was first released on May 26 2025 and is available on GitHub. ([github.com/horibyte/arctic](https://github.com/horibyte/arctic))
+
+![Horibyte Arctic 0.1.5 Demo on QEMU](img/articles/arctic/0.1.5demo.png){: style="box-shadow:none!important;"}
+<p id="caption">QEMU running Horibyte Arctic 0.1.5</p>
+
+
+Arctic is *only* compatible with QEMU and VMware, this is due to how other virtualizors and emulators manage image files, as QEMU and VMware do not care if the disk has a file system in it or not.
+
+The latest stable release is 0.1.5 (as of 27 May 2025).
+
+#### Overview
+
+Horibyte Arctic is a 16-bit real mode system, thus making it compatible with as low as an Intel 8088 (citation needed), these are the suggested recommended system requirements (according to Horibyte):
+
+- A 486 processor
+- 4 MB of RAM
+- A floppy disk drive
+- Keyboard
+- A VGA card
+
+Arctic also supports the following commands (info text taken from 0.1.5):
+
+```
+help            Display this help message
+clear           Clear the screen
+echo <text>     Prints text (e.g., echo Hello World)
+ver             Display version information
+shutdown        Halts the system
+```
+*(More commands coming soon!)*
+
+#### Development
+
+Arctic started development as far back as 26 May 2025 (sourced from a Discord server where Horibyte talks) with a CLI as it's main UI. All of the development builds available (as of 27 May 2025) are written in Assembly.
+
+However, several instances of a `LeafyOS` VM have been found in Horibyte's VMware VM library, and several `kernel.bin` files have been mentioned (or even taken a screenshot of) by Horibyte themselves. All of the kernel.bin files have been lost by Horibyte, though.
+
+
+**Lab02**, one of the virtual development labs have code for a 32-bit version of Arctic 0.1.5 (namely [Arctic32](Arctic32)), claimed by Horibyte, said build is not stable.
+
+>  It wont even boot i'll tell ya that.
+
+- *Horibyte*
+
+The source code has been uploaded to GitHub.
+
+**Lab03**'s purpose is to test main servicing changes within the operating system's code, the most notable project of it is the ***Horibyte Arctic Setup Program***.
+
+None of the code within these development labs have been shared by Horibyte, but screenshots of them have
+
+#### Kernel overview
+
+The Arctic load process consists of 3 files:
+
+1. `bootloader.bin` - the Arctic Bootloader (*internally code named Midori*), which loads `osload.bin`.
+2. `osload.bin` - the in-between from the bootloader and kernel to load necessary functions and other stuff to successfully launch `rekanto.bin`.
+3. `rekanto.bin` - the main Arctic kernel (*code named ReKanto*), containing all of the commands and drivers for the operating system.
+
+The Arctic kernel is a monolithic kernel due to its current simplicity. The code name comes from the *Kanto* region from **Pokémon Red & Blue**, and a "Re" was added due to the original Kanto kernel being rewritten due to issues with 32-bit protected mode.
+
+As it is, Arctic currently is only on 16-bit real mode, due to the aftermentioned issues while transferring from 16-bit to 32-bit.
+
+#### The Mockup Era™ Gallery
+
+*This is a gallery of the finished Arctic Mockups*
+
+Before starting development, Arctic mockups were created by Horibyte in GIMP.
+None of these are real screenshots of builds.............*yet!*
+
+![](img/articles/arctic/7078personal.png)
+
+<p id="caption">Horibyte Arctic Personal Beta 2 Build 7078</p>
+
+
+![](img/articles/arctic/7089professional.png)
+
+<p id="caption">Horibyte Arctic Professional Beta 2 Build 7089</p>
+
+![](img/articles/arctic/7089personal.png)
+
+<p id="caption">Horibyte Arctic Personal Beta 2 Build 7089</p>
+
+
+![](img/articles/arctic/7089server.png)
+
+<p id="caption">Horibyte Arctic Server Family Beta 2 Build 7089</p>
+
+
+![](img/articles/arctic/7089bs.png)
+
+<p id="caption">Horibyte Arctic Professional Beta 2 Build 7089 Boot Screen</p>

@@ -7,14 +7,14 @@ hatnote: This list is subject to change in the future.
 
 This article shows a list of codenames used by [Horibyte](Horibyte) in their projects.
 
-[A](#A) · [B](#B) · [D](#D) · [H](#H) · [L](#L) · [N](#N) · [O](#O) · [Q](#Q) · [S](#S) · [W](#W) · [Z](#Z)
+[A](#A) · [B](#B) · [D](#D) · [H](#H)· [K](#K) · [L](#L) · [M](#M) · [N](#N) · [O](#O) · [Q](#Q) · [R](#R) · [S](#S) · [W](#W) · [Z](#Z)
 
 <h4 id="A">A</h4>
 <hr>
 
 <h5 id="Arctic">Arctic</h5>
 
-Codename of a future, unreleased operating system by Horibyte, also see [LeafyOS](#LeafyOS) and [Project Arctic](Project_Arctic).
+Codename for Horibyte Arctic, also see [LeafyOS](#LeafyOS) and [Horibyte Arctic](Horibyte_Arctic).
 
 <h5 id="Atheros">Atheros</h5>
 
@@ -49,12 +49,36 @@ Suggested name for the user interface component in Horibyte Arctic, also referen
 
 StuffyXP Website Update 2.1.1, referencing that the update was released on New Years Eve, but was actually released on Christmas Eve (Dec 24).
 
+<h4 id="K">K</h4>
+<hr>
+
+<h5 id="Kanto">Kanto</h5>
+
+The original C++ Arctic Kernel.
+
+<h5 id="Kanto32">Kanto32</h5>
+
+The i386 re-write of the Kanto kernel, included with Arctic32
+
 <h4 id="L">L</h4>
 <hr>
 
 <h5 id="LeafyOS">LeafyOS</h5>
 
-Original name for Horibyte's unreleased operating system, later renamed to [Arctic](#Arctic), also see [Project Arctic](Project_Arctic).
+Original name of Horibyte Arctic.
+
+<h4 id="M">M</h4>
+<hr>
+
+<h5 id="Midori">Midori</h5>
+
+Internal name for the Arctic bootloader and the name of the <span id="tt2" style="cursor:help;">successor to both Horicraft and Horicraft (2)</span>.
+
+
+<div class="mdl-tooltip mdl-tooltip--large mdl-tooltip--top" for="tt2">
+MidoriMC
+</div>
+
 
 <h4 id="N">N</h4>
 <hr>
@@ -76,6 +100,13 @@ StuffyXP Website Update 2.1.2, the last update to StuffyXP Website after being r
 <h5 id="Qattah">Qattah</h5>
 
 [Stuffy's Place](Stuffys_Place).
+
+<h4 id="R">R</h4>
+<hr>
+
+<h5 id="ReKanto">ReKanto</h5>
+
+The codename for the assembly rewrite of the [Horibyte Arctic](Horibyte_Arctic) kernel.
 
 <h4 id="S">S</h4>
 <hr>
@@ -102,4 +133,4 @@ Cancelled engine by Horibyte that would later on merge to the HoriWiki engine.
 
 
 
-<p id="note"><a href="#note1" id="notec1">&sup1;<span></span>&uparrow;</a> Referenced from the build file's commit history, see <a href="https://github.com/horibyte/stuffyxp-website/blob/edb17853d923a889996abe566e3d1096f422308a/js/build.js" style="font-style:italic !important;">this for more info</a>.</p>
+<p id="note"><a href="#note1" id="notec1">&sup1;<span></span>&uparrow;</a> Referenced from the build file's commit history, see <a href="https://github.com/horibyte/stuffyxp-website/blob/edb17853d923a889996abe566e3d1096f422308a/js/build.js" style="font-style:italic !important;">this</a> for more info.</p>

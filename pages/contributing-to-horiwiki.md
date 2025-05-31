@@ -70,6 +70,7 @@ List of compatible syntaxes:
 
 - List item (`- text`)
     - List sub-item (`  - text`)
+
 1. Number item (`1. text`)
 - Image (`![alt text]([pathtoimage]){: *html code here*}`)
 ![horicraft A](img/articles/a_emoji/a_horicraft.png){: style="width:25% !important;"}
