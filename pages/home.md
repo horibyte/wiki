@@ -4,6 +4,8 @@ permalink: /Main_Page.html
 search_exclude: true
 ---
 
+<script src="js/dyk.js"></script>
+
 <style>
     hr {
         display: none !important;
@@ -20,31 +22,18 @@ search_exclude: true
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
-  height: 176px;
+  height:  60px;
   background: url('https://getmdl.io/assets/demos/welcome_card.jpg') center / cover;
-}
-.demo-card-wide > .mdl-card__menu {
-  color: #fff;
 }
 </style>
 
 <div class="demo-card-wide mdl-card mdl-shadow--2dp">
   <div class="mdl-card__title">
-    <h2 class="mdl-card__title-text">Lorem ipsum...</h2>
+    <h2 class="mdl-card__title-text">Did you know...</h2>
   </div>
   <div class="mdl-card__supporting-text">
-    ...dolor sit amet, consectetur adipiscing elit.<br>
-    If you see this, I probably forgor to remove this from my debug version.
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-      Get Started (not)
-    </a>
-  </div>
-  <div class="mdl-card__menu">
-    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-      <i class="material-icons">share</i>
-    </button>
+    <div id="facts-container" style="color:black;padding:-1;">
+      </div>
   </div>
 </div>
 
