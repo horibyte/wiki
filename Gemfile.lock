@@ -3,12 +3,15 @@ GEM
   specs:
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
+    base64 (0.3.0)
     bigdecimal (3.1.9)
     colorator (1.1.0)
     concurrent-ruby (1.3.5)
+    csv (3.3.5)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
+    erb (5.0.2)
     eventmachine (1.2.7)
     ffi (1.17.2-x64-mingw-ucrt)
     ffi (1.17.2-x86_64-linux-gnu)
@@ -40,6 +43,8 @@ GEM
       webrick (~> 1.7)
     jekyll-feed (0.17.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-redirect-from (0.16.0)
+      jekyll (>= 3.3, < 5.0)
     jekyll-sass-converter (3.1.0)
       sass-embedded (~> 1.75)
     jekyll-seo-tag (2.8.0)
@@ -54,6 +59,7 @@ GEM
     listen (3.9.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
+    logger (1.7.0)
     mercenary (0.4.0)
     minima (2.5.2)
       jekyll (>= 3.5, < 5.0)
@@ -88,9 +94,14 @@ PLATFORMS
   x86_64-linux-gnu
 
 DEPENDENCIES
+  base64 (~> 0.3.0)
+  csv (~> 3.3)
+  erb (~> 5.0)
   http_parser.rb (~> 0.6.0)
   jekyll (~> 4.3.4)
   jekyll-feed (~> 0.12)
+  jekyll-redirect-from
+  logger (~> 1.7)
   minima (~> 2.5)
   tzinfo (>= 1, < 3)
   tzinfo-data

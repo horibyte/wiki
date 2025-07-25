@@ -18,17 +18,17 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Horibyte Wiki Beta
-email: thehoribyte@gmail.com
-description: "Why are you having this lol"
+title: KuroWiki Beta4Escro
+email: lexthenova@gmail.com
+description: "KuroWiki Beta 4/Release Candidate 1 Escrow Developer Build."
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://horibyte.is-a.dev/wiki" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: Horibyte
-github_username:  horibyte
+url: "https://lexnova.is-a.dev/wiki" # the base hostname & protocol for your site, e.g. http://example.comtwitter_username: Horibyte
+github_username:  lexthenova
 
 # Build settings
 # theme: minima
 plugins:
+  - jekyll-redirect-from
   - jekyll-feed
 
 # Include from processing.
