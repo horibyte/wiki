@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="KuroWiki Beta 4 Escrow">
+    <meta property="og:description" content="KuroWiki Beta 4/Release Candidate 1 Escrow Developer Build.">
+    <meta property="og:url" content="https://lexnova.is-a.dev/wiki/">
+    <meta name="theme-color" content="#ffffff">
+    <meta content="website" property="type">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <meta name="google-site-verification" content="juCkrJsWFUpDDiBrebgAywCVCCE90p5S7yfXBNjIlXQ" />
+    <title>Development of LexWiki ~ KuroWiki</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>
+        html {
+            background-image: url('img/bg.jpg') !important;
+            background-position-y: -350px;
+            background-attachment: fixed;
+            
+            /* background-image: linear-gradient(to bottom right, rgb(15, 17, 90), rgb(34, 12, 70)) */
+        }
+    </style>
+</head>
+<body>
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+/* is-hidden-widescreen re-implementation from Bulma */
+@media screen and (min-width:1081px) {
+  .is-display-none-widescreen,
+  .is-hidden-widescreen {
+    display:none!important;
+  }
+}
+
+/* is-hidden-mobile re-implementation from Bulma */
+@media screen and (max-width:1080px) {
+  .is-display-none-mobile,
+  .is-hidden-mobile {
+    display:none!important;
+  }
+}
+
+
+a {
+    text-decoration: none !important;
+}
+
+.mdl-layout__header, .is-casting-shadow {
+    display:block !important;
+    word-wrap: normal;
+}
+
+@media screen and (max-width:1080px) {
+  .is-display-none-mobile,
+  .is-hidden-mobile {
+    display:none!important;
+  }
+}
+
+.mdl-layout__drawer {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  color:white !important;
+  border-color: none;
+  border-right: 0px;
+}
+
+.mdl-navigation__link {
+  color:white !important;
+  
+}
+
+.mdl-navigation__link:hover {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.hatnote {
+  background-color: rgb(240, 236, 236);
+  margin-top: 20px;
+  margin-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-style: italic;
+}
+
+img {
+    box-shadow:0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.2),0 1px 8px 0 rgba(0,0,0,.12);
+    justify-content: center;
+    margin: 0 auto;
+    display: block;
+}
+
+/* why doesnt this fucking work */
+#background-image {
+    filter: blur(5%) !important;
+}
+
+#caption {
+    color:gray;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.mdl-layout__header {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+</style>
+<div class="container" id="background-image">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+        <div class="container is-hidden-mobile">
+      <span id="title" class="mdl-layout-title">KuroWiki</span>
+      </div>
+       <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--align-right" style="color: white !important;">
+        <div class="mdl-textfield__holder">
+            
+       <!-- Simple Textfield -->
+            <div class="container" style="padding: 5%; margin:-10px !important;">
+            <form action="results" method="get">
+            <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="search-input" name="q" style="border-bottom: 0px rgba(0,0,0,0);">
+            <label class="mdl-textfield__label" for="sample1"><i style="color: rgba(255,255,255,0.5) !important;font-family: Roboto;">Search KuroWiki...</i></label>
+            </div>
+            </div>
+            </form>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">KuroWiki</span>
+    <nav class="mdl-navigation" style="margin-top: -5% !important;">
+      <a class="mdl-navigation__link" href="Main_Page">Main Page</a>
+      <a class="mdl-navigation__link" href="Special%3ASitemap">Sitemap</a>
+      <a class="mdl-navigation__link" href="Contributing_to_the_LexWiki">Contribute!</a>
+      <span style="padding-left:5.5%; color:white"><br>&copy;2025 KuroWiki Contributors.<br>All Rights Reserved.<br><br>Content & <a href="https://github.com/thelexibyte/wiki/">source code</a> licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0</a><br><br>DeltaWiki Engine <span id="devphase" style="cursor:help;">β</span><div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="devphase">Beta</div>4 Escrow<br><span style="font-size: smaller; color:darkgray !important;">Build 4.2.2000.kuro_escro.250725-1423</span></span>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="box mdl-shadow--8dp" style="background-color: rgba(255,255,255,0.75); backdrop-filter: blur(15px); width:96%; justify-content: center; display: block; margin: 0 auto; padding: 8px;">
+        <div class="container" style="margin-left: 15px; margin-right: 15px; margin-top: 15px; margin-bottom: 15px">
+            <div class="hatnote">
+            This article details about the development of LexWiki, for the main LexWiki article, see <a href="LexWiki">LexWiki</a>
+        </div>
+      <h4 id="pagetitle" style="color:rgb(97, 97, 97)" >Development of LexWiki</h4><hr style="color: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))!important;">
+      <noscript><b><span style="color:rgb(197, 195, 49);">Note:</span></b><i> JavaScript is not enabled. The HoriWiki Engine may not work to its full capacity.</i></noscript>
+            <p>The <strong>LexWiki Engine</strong>, the custom-built core of the LexWiki encyclopedia, has undergone a rapid development process, evolving from an initial concept in early April 2025 to its current <strong>Beta 3 status</strong>.</p>
+
+<h4 id="behind-the-scenes">Behind-the-scenes</h4>
+<hr />
+
+<h5 id="early-april-2025-planning-stages">Early April 2025: Planning Stages</h5>
+<hr />
+
+<p>In <strong>early April 2025</strong>, Lexibyte began thinking about making a Lexibyte-themed Wikipedia. The goal was to create a resource to easily get information about their projects and related content. They considered a self-hosted MediaWiki server, but Lexibyte was unsure how to make it work. This thought process continued through the entire month of April.</p>
+
+<h5 id="early-may-2025-development-start">Early May 2025: Development Start</h5>
+<hr />
+
+<p>Between <strong>May 1 and May 3</strong>, a Miraheze-hosted wiki was in the plans. However, after it wasn’t parsed correctly due to the bot not cooperating, the LexWiki Engine started development.</p>
+
+<p>Development began with forking <a href="HoriWebsite">HoriWebsite</a> version <strong>2.4.3565</strong>, as creating new pages with Jekyll within the existing framework would cause issues.</p>
+
+<p>Here are the earliest available screenshots of that fork:</p>
+
+<p><img src="img/articles/horiwiki/earliest_developer_pre-alpha.png" alt="a screenshot of the earliest developer alpha of horiwiki, changing the branch from main to main-wik and changing the website title to horiwiki" style="width:60%;" title="Screenshot of an early developer alpha of Horiwiki, showing a branch change from 'main' to 'main-wik' and the website title being changed to 'horiwiki'." /><br />
+<img src="img/articles/horiwiki/devalpha-info.png" alt="LexWiki Pre-alpha engine debug buil string" style="width:50%;" title="Debug build string from the LexWiki Pre-alpha engine." /></p>
+
+<h4 id="milestone-1-2-and-3-pre-alpha-and-alpha">Milestone 1, 2 and 3 (Pre-Alpha) and Alpha</h4>
+<hr />
+
+<p>Real development quickly took place after forking the website; what is now known as the LexWiki Engine was developed in just two days.</p>
+
+<p>This section provides screenshots from developer builds of LexWiki, though image quality may vary as they were taken from Discord messages sent by Lexibyte or others.</p>
+
+<h5 id="builds-compiled-on-may-4-2025">Builds Compiled on May 4, 2025:</h5>
+<hr />
+
+<h6 id="pre-alpha-01">Pre-alpha 0.1</h6>
+<hr />
+
+<p><img src="img/articles/horiwiki/pa0.1.png" alt="pre-alpha 0.1" style="width:50%;" /><br />
+<img src="img/articles/horiwiki/pa0.1-1.png" alt="pre-alpha 0.1" style="width:50%;" /><br />
+This build essentially removed most of the HoriWebsite’s front-end elements, though some underlying HoriWebsite code still remained.</p>
+
+<h6 id="pre-alpha-02">Pre-alpha 0.2</h6>
+<hr />
+
+<p><img src="img/articles/horiwiki/pa0.2.png" alt="pre-alpha 0.2" style="width:50%;" /><br />
+This version shows early attempts to implement MediaWiki-style navigation bars.</p>
+
+<h6 id="pre-alpha-03">Pre-alpha 0.3</h6>
+<hr />
+
+<p><img src="img/articles/horiwiki/pa0.3.png" alt="pre-alpha 0.3" style="width:50%;" /><br />
+Navigation bars were partially implemented in this build, using multi-colored segments to aid in debugging.</p>
+
+<h6 id="pre-alpha-04">Pre-alpha 0.4</h6>
+<hr />
+
+<p><img src="img/articles/horiwiki/pa0.4.png" alt="pre-alpha 0.4" style="width:50%;" /><br />
+Pre-alpha 0.4 is where LexWiki began to take on its distinct form, with several key elements nearing completion.</p>
+
+<h6 id="pre-alpha-05x">Pre-alpha 0.5.x</h6>
+<hr />
+
+<p><img src="img/articles/horiwiki/pa0.5.png" alt="pre-alpha 0.5" style="width:50%;" /><br />
+<img src="img/articles/horiwiki/pa0.5.2.png" alt="pre-alpha 0.5.2" style="width:50%;" /><br />
+<img src="img/articles/horiwiki/pa0.5.2-1.png" alt="pre-alpha 0.5.2 1" style="width:50%;" /><br />
+Builds 0.5.x were the most complete builds of that day, with nearly all essential components implemented correctly.</p>
+
+<h5 id="builds-compiled-on-may-5-2025">Builds Compiled on May 5, 2025:</h5>
+<hr />
+
+<h6 id="pre-alpha-053">Pre-alpha 0.5.3</h6>
+<hr />
+
+<p><img src="img/articles/horiwiki/pa0.5.3-anaheim.png" alt="pre-alpha 0.5.3" style="width:50%;" /><br />
+Build 0.5.3 was the most feature-complete pre-alpha build, with most important elements already in place.</p>
+
+<h5 id="builds-compiled-on-may-6-7-2025">Builds Compiled on May 6-7, 2025:</h5>
+<hr />
+
+<h6 id="alpha-11">Alpha 1.1</h6>
+<hr />
+
+<p><img src="img/articles/horiwiki/a1.1.png" alt="alpha 1.1" style="width:50%;" /><br />
+Alpha 1.1 was a major milestone, introducing significant updates to the engine, including <strong>Markdown support</strong>. Most fixes were contributed by <strong>Clyron</strong>.</p>
+
+<h6 id="alpha-12">Alpha 1.2</h6>
+<hr />
+
+<p><img src="img/articles/horiwiki/a1.2-home.png" alt="alpha 1.2" style="width:50%;" /><br />
+<img src="img/articles/horiwiki/a1.2-dirlist.png" alt="alpha 1.2 sitemap" style="width:50%;" /><br />
+<img src="img/articles/horiwiki/a1.2-cthrwd.png" alt="alpha 1.2 docs file" style="width:50%;" /><br />
+As of May 7, 2025, Alpha 1.2 was the current version. This update focused primarily on bug fixes rather than new features, but was still a notable refinement of the engine.</p>
+
+<h4 id="beta">Beta</h4>
+
+<p>Development after the initial Alpha phases rapidly progressed into Beta stages, introducing significant new functionalities and refinements.</p>
+
+<h5 id="beta-10">Beta 1.0</h5>
+<hr />
+<p><img src="img/articles/horiwiki/b1.0-m.png" alt="beta 1.0 mobile screenshot" style="width:50%;" /><br />
+Released on <strong>May 7, 2025</strong>, Beta 1.0 included crucial fixes for <strong>mobile compatibility</strong>.</p>
+
+<h5 id="beta-20">Beta 2.0</h5>
+<hr />
+<p>Beta 2.0 marked a major step by introducing the <strong>Material Design Lite (MDL) layout</strong>, significantly enhancing the wiki’s visual appearance and user interface.</p>
+
+<h5 id="beta-21">Beta 2.1</h5>
+<hr />
+<p>Building on Beta 2.0, this version introduced core user-facing features, including <strong>functional search capabilities</strong> and the <strong>Wikipedia-styled “Did You Know” section</strong>.</p>
+
+<h5 id="beta-30">Beta 3.0</h5>
+<hr />
+<p>LexWiki has recently reached <strong>Beta 3 status</strong> in its development version. This phase primarily focuses on enhancing various aspects of the wiki:</p>
+
+<ul>
+  <li><strong>MDL Component Enhancements:</strong> Material Design Lite components have received significant updates, now featuring <strong>blurred transparency</strong>, giving them a <strong>Mica-like appearance</strong>.</li>
+  <li><strong>Article Wording Improvements:</strong> Efforts have been made to enhance the wording of various articles for better clarity and consistency.</li>
+  <li><strong>Horibyte to Lexibyte Transition:</strong> This build includes updates related to the ongoing brand transition from Horibyte to Lexibyte within the wiki’s content and styling.</li>
+</ul>
+
+<p>The LexWiki continues its development period, as there are more things to add to make it a fully complete MediaWiki-like port to Jekyll. The wiki is still in development.</p>
+
+        </div>
+    </div>
+    <p>&nbsp;<br></p>
+  </main>
+</div>
+</div>
+</body>
+</html>

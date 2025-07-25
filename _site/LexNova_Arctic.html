@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="KuroWiki Beta 4 Escrow">
+    <meta property="og:description" content="KuroWiki Beta 4/Release Candidate 1 Escrow Developer Build.">
+    <meta property="og:url" content="https://lexnova.is-a.dev/wiki/">
+    <meta name="theme-color" content="#ffffff">
+    <meta content="website" property="type">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    <meta name="google-site-verification" content="juCkrJsWFUpDDiBrebgAywCVCCE90p5S7yfXBNjIlXQ" />
+    <title>LexNova Arctic ~ KuroWiki</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css">
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <style>
+        html {
+            background-image: url('img/bg.jpg') !important;
+            background-position-y: -350px;
+            background-attachment: fixed;
+            
+            /* background-image: linear-gradient(to bottom right, rgb(15, 17, 90), rgb(34, 12, 70)) */
+        }
+    </style>
+</head>
+<body>
+    <!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+/* is-hidden-widescreen re-implementation from Bulma */
+@media screen and (min-width:1081px) {
+  .is-display-none-widescreen,
+  .is-hidden-widescreen {
+    display:none!important;
+  }
+}
+
+/* is-hidden-mobile re-implementation from Bulma */
+@media screen and (max-width:1080px) {
+  .is-display-none-mobile,
+  .is-hidden-mobile {
+    display:none!important;
+  }
+}
+
+
+a {
+    text-decoration: none !important;
+}
+
+.mdl-layout__header, .is-casting-shadow {
+    display:block !important;
+    word-wrap: normal;
+}
+
+@media screen and (max-width:1080px) {
+  .is-display-none-mobile,
+  .is-hidden-mobile {
+    display:none!important;
+  }
+}
+
+.mdl-layout__drawer {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  color:white !important;
+  border-color: none;
+  border-right: 0px;
+}
+
+.mdl-navigation__link {
+  color:white !important;
+  
+}
+
+.mdl-navigation__link:hover {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.hatnote {
+  background-color: rgb(240, 236, 236);
+  margin-top: 20px;
+  margin-right: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-style: italic;
+}
+
+img {
+    box-shadow:0 3px 4px 0 rgba(0,0,0,.14),0 3px 3px -2px rgba(0,0,0,.2),0 1px 8px 0 rgba(0,0,0,.12);
+    justify-content: center;
+    margin: 0 auto;
+    display: block;
+}
+
+/* why doesnt this fucking work */
+#background-image {
+    filter: blur(5%) !important;
+}
+
+#caption {
+    color:gray;
+    font-style: italic;
+    text-align: center;
+}
+
+
+.mdl-layout__header {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+</style>
+<div class="container" id="background-image">
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+        <div class="container is-hidden-mobile">
+      <span id="title" class="mdl-layout-title">KuroWiki</span>
+      </div>
+       <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--align-right" style="color: white !important;">
+        <div class="mdl-textfield__holder">
+            
+       <!-- Simple Textfield -->
+            <div class="container" style="padding: 5%; margin:-10px !important;">
+            <form action="results" method="get">
+            <div class="mdl-textfield mdl-js-textfield">
+            <input class="mdl-textfield__input" type="text" id="search-input" name="q" style="border-bottom: 0px rgba(0,0,0,0);">
+            <label class="mdl-textfield__label" for="sample1"><i style="color: rgba(255,255,255,0.5) !important;font-family: Roboto;">Search KuroWiki...</i></label>
+            </div>
+            </div>
+            </form>
+
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">KuroWiki</span>
+    <nav class="mdl-navigation" style="margin-top: -5% !important;">
+      <a class="mdl-navigation__link" href="Main_Page">Main Page</a>
+      <a class="mdl-navigation__link" href="Special%3ASitemap">Sitemap</a>
+      <a class="mdl-navigation__link" href="Contributing_to_the_LexWiki">Contribute!</a>
+      <span style="padding-left:5.5%; color:white"><br>&copy;2025 KuroWiki Contributors.<br>All Rights Reserved.<br><br>Content & <a href="https://github.com/thelexibyte/wiki/">source code</a> licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0</a><br><br>DeltaWiki Engine <span id="devphase" style="cursor:help;">β</span><div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="devphase">Beta</div>4 Escrow<br><span style="font-size: smaller; color:darkgray !important;">Build 4.2.2000.kuro_escro.250725-1423</span></span>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="box mdl-shadow--8dp" style="background-color: rgba(255,255,255,0.75); backdrop-filter: blur(15px); width:96%; justify-content: center; display: block; margin: 0 auto; padding: 8px;">
+        <div class="container" style="margin-left: 15px; margin-right: 15px; margin-top: 15px; margin-bottom: 15px">
+            <div class="hatnote">
+            This article details a work-in-progress project by <a href="LexNova">LexNova</a> and is currently incomplete.
+        </div>
+      <h4 id="pagetitle" style="color:rgb(97, 97, 97)" >LexNova Arctic</h4><hr style="color: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))!important;">
+      <noscript><b><span style="color:rgb(197, 195, 49);">Note:</span></b><i> JavaScript is not enabled. The HoriWiki Engine may not work to its full capacity.</i></noscript>
+            <p><strong>LexNova Arctic</strong><a href="#notec1" id="note1">¹</a> is an open-source operating system for personal computers, developed and maintained by <a href="LexNova">LexNova</a>. It was first released on May 26, 2025, and its source code is available on GitHub (<a href="https://github.com/thelexibyte/arctic">github.com/thelexibyte/arctic</a>).</p>
+
+<p><img src="img/articles/arctic/0.1.5demo.png" alt="LexNova Arctic 0.1.5 Demo on QEMU" style="box-shadow:none!important;" /></p>
+<p id="caption">QEMU running LexNova Arctic 0.1.5a</p>
+
+<p>Arctic is currently <strong>only compatible with QEMU and VMware</strong>. This limitation stems from how other virtualization and emulation software manage image files, whereas QEMU and VMware allow for disks without pre-existing file systems.</p>
+
+<p>The latest stable release, as of May 27, 2025, is version 0.1.5.</p>
+
+<h4 id="overview">Overview</h4>
+
+<p>LexNova Arctic operates as a 16-bit real mode system, making it potentially compatible with processors as early as the Intel 8088 (citation needed). LexNova suggests the following recommended system requirements:</p>
+
+<ul>
+  <li>A 486 processor</li>
+  <li>4 MB of RAM</li>
+  <li>A floppy disk drive</li>
+  <li>Keyboard</li>
+  <li>A VGA card</li>
+</ul>
+
+<p>Arctic supports the following commands (information derived from version 0.1.5):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>help         Display this help message
+clear        Clear the screen
+echo &lt;text&gt;  Prints text (e.g., echo Hello World)
+ver          Display version information
+shutdown     Halts the system
+</code></pre></div></div>
+<p><em>(More commands coming soon!)</em></p>
+
+<p>Arctic is available in two SKUs: <strong>Standard</strong> and <strong>Server</strong>. The Server SKU is currently only accessible within Lab02.</p>
+
+<h4 id="development">Development</h4>
+
+<p>Development of Arctic began around May 26, 2025, initially featuring a command-line interface (CLI) as its primary user interface. All development builds available as of May 27, 2025, are written in Assembly.</p>
+
+<p>Interestingly, instances of a <code class="language-plaintext highlighter-rouge">LeafyOS</code> virtual machine have been observed in LexNova’s VMware VM library. Additionally, LexNova has mentioned and even shared screenshots of several <code class="language-plaintext highlighter-rouge">kernel.bin</code> files, although all of these files have since been lost.</p>
+
+<p><strong>Lab02</strong>, one of LexNova’s virtual development labs, contains code for a <span id="tt2">i386</span> version of Arctic 0.1.5, known as <a href="Arctic32">Arctic32</a>. LexNova has stated that this build is unstable:</p>
+
+<div class="mdl-tooltip mdl-tooltip--large" for="tt2">
+32-bit
+</div>
+
+<blockquote>
+  <p>It won’t even boot, I’ll tell ya that.</p>
+
+</blockquote>
+
+<p><em>— LexNova</em></p>
+
+<p>The source code for this experimental build has been uploaded to GitHub.</p>
+
+<p><strong>Lab03</strong> serves as a testing ground for core servicing changes within the operating system’s code. The most notable project developed within Lab03 is the <strong><em>LexNova Arctic Setup Program</em></strong>.</p>
+
+<p>While LexNova has not shared the code from this development lab, screenshots of its contents do (and even compiled builds) do exist.</p>
+
+<h4 id="kernel-overview">Kernel Overview</h4>
+
+<p>The Arctic loading process involves three key files:</p>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">bootloader.bin</code> - The Arctic Bootloader, internally codenamed <strong>Midori</strong>, which is responsible for loading <code class="language-plaintext highlighter-rouge">osload.bin</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">osload.bin</code> - An intermediary component between the bootloader and the kernel, responsible for loading necessary functions and preparing for the launch of <code class="language-plaintext highlighter-rouge">rekanto.bin</code>.</li>
+  <li><code class="language-plaintext highlighter-rouge">rekanto.bin</code> - The main Arctic kernel, codenamed <strong>ReKanto</strong>, which contains all of the operating system’s commands and drivers.</li>
+</ol>
+
+<p>The Arctic kernel is a monolithic kernel, a design choice attributed to its current simplicity. The codename “ReKanto” is a nod to the <em>Kanto</em> region from <strong>Pokémon Red &amp; Blue</strong>, with “Re” added because the original Kanto kernel was rewritten due to issues encountered during the transition to 32-bit protected mode. Addionally, the i386 rewrite of the kernel is codenamed <strong>Kanto32</strong>.</p>
+
+<p>As it stands, Arctic remains a 16-bit real mode system due to the aforementioned challenges faced during the attempt to transition from 16-bit to 32-bit.</p>
+
+<h4 id="the-mockup-era-gallery">The Mockup Era™ Gallery</h4>
+
+<p><em>This gallery showcases the finished Arctic mockups created by LexNova.</em></p>
+
+<p>Before active development began, LexNova designed several Arctic mockups using GIMP. These images are conceptual representations and are <strong>not</strong> actual screenshots of functional builds—<em>yet!</em></p>
+
+<p><img src="img/articles/arctic/7078personal.png" alt="" /></p>
+<p id="caption">Horibyte Arctic Personal Beta 2 Build 7078</p>
+
+<p><img src="img/articles/arctic/7089professional.png" alt="" /></p>
+<p id="caption">Horibyte Arctic Professional Beta 2 Build 7089</p>
+
+<p><img src="img/articles/arctic/7089personal.png" alt="" /></p>
+<p id="caption">Horibyte Arctic Personal Beta 2 Build 7089</p>
+
+<p><img src="img/articles/arctic/7089server.png" alt="" /></p>
+<p id="caption">Horibyte Arctic Server Family Beta 2 Build 7089</p>
+
+<p><img src="img/articles/arctic/7089bs.png" alt="" /></p>
+<p id="caption">Horibyte Arctic Professional Beta 2 Build 7089 Boot Screen</p>
+
+        </div>
+    </div>
+    <p>&nbsp;<br></p>
+  </main>
+</div>
+</div>
+</body>
+</html>
