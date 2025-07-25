@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="HoriWiki">
-    <meta property="og:description" content="Horibyte Wiki Beta 2">
-    <meta property="og:url" content="https://horibyte.is-a.dev/wiki/">
+    <meta property="og:title" content="KuroWiki Beta 4 Escrow">
+    <meta property="og:description" content="KuroWiki Beta 4/Release Candidate 1 Escrow Developer Build.">
+    <meta property="og:url" content="https://lexnova.is-a.dev/wiki/">
     <meta name="theme-color" content="#ffffff">
     <meta content="website" property="type">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <meta name="google-site-verification" content="juCkrJsWFUpDDiBrebgAywCVCCE90p5S7yfXBNjIlXQ" />
-    <title>Dogui Heavy Industries Incorporated ~ HoriWiki</title>
+    <title>Dogui Heavy Industries Incorporated ~ KuroWiki</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <style>
         html {
-            background-image: url('https://getmdl.io/assets/demos/transparent.jpg') !important;
+            background-image: url('img/bg.jpg') !important;
+            background-position-y: -350px;
             background-attachment: fixed;
-            background-size: 210%;background-position-x: 45%;
+            
             /* background-image: linear-gradient(to bottom right, rgb(15, 17, 90), rgb(34, 12, 70)) */
         }
     </style>
@@ -31,6 +33,23 @@
      your background is light. */
   color: white;
 }
+
+/* is-hidden-widescreen re-implementation from Bulma */
+@media screen and (min-width:1081px) {
+  .is-display-none-widescreen,
+  .is-hidden-widescreen {
+    display:none!important;
+  }
+}
+
+/* is-hidden-mobile re-implementation from Bulma */
+@media screen and (max-width:1080px) {
+  .is-display-none-mobile,
+  .is-hidden-mobile {
+    display:none!important;
+  }
+}
+
 
 a {
     text-decoration: none !important;
@@ -46,6 +65,23 @@ a {
   .is-hidden-mobile {
     display:none!important;
   }
+}
+
+.mdl-layout__drawer {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  color:white !important;
+  border-color: none;
+  border-right: 0px;
+}
+
+.mdl-navigation__link {
+  color:white !important;
+  
+}
+
+.mdl-navigation__link:hover {
+  background-color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .hatnote {
@@ -77,7 +113,7 @@ img {
 
 
 .mdl-layout__header {
-    background-color: rgba(0, 0, 0, 0.2) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 </style>
 <div class="container" id="background-image">
@@ -85,7 +121,7 @@ img {
   <header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
         <div class="container is-hidden-mobile">
-      <span id="title" class="mdl-layout-title">HoriWiki</span>
+      <span id="title" class="mdl-layout-title">KuroWiki</span>
       </div>
        <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
@@ -97,8 +133,8 @@ img {
             <div class="container" style="padding: 5%; margin:-10px !important;">
             <form action="results" method="get">
             <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="search-input" name="q">
-            <label class="mdl-textfield__label" for="sample1"><i style="color: rgb(230,230,230) !important">Search HoriWiki...</i></label>
+            <input class="mdl-textfield__input" type="text" id="search-input" name="q" style="border-bottom: 0px rgba(0,0,0,0);">
+            <label class="mdl-textfield__label" for="sample1"><i style="color: rgba(255,255,255,0.5) !important;font-family: Roboto;">Search KuroWiki...</i></label>
             </div>
             </div>
             </form>
@@ -108,45 +144,64 @@ img {
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">HoriWiki</span>
+    <span class="mdl-layout-title">KuroWiki</span>
     <nav class="mdl-navigation" style="margin-top: -5% !important;">
       <a class="mdl-navigation__link" href="Main_Page">Main Page</a>
       <a class="mdl-navigation__link" href="Special%3ASitemap">Sitemap</a>
-      <a class="mdl-navigation__link" href="Contributing_to_HoriWiki">Contribute!</a>
-      <span style="padding-left:5.5%; color:gray"><br>&copy;2025 HoriWiki Contributors.<br>All Rights Reserved.<br><br>Content & <a href="https://github.com/horibyte/wiki/">source code</a> licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0</a><br><br>HoriWiki Engine <span id="devphase" style="cursor:help;">β</span><div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="devphase">Beta</div>2<br><span style="font-size: smaller; color:darkgray !important;">Build 2.1.602.material.250602-1710</span></span>
+      <a class="mdl-navigation__link" href="Contributing_to_the_LexWiki">Contribute!</a>
+      <span style="padding-left:5.5%; color:white"><br>&copy;2025 KuroWiki Contributors.<br>All Rights Reserved.<br><br>Content & <a href="https://github.com/thelexibyte/wiki/">source code</a> licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0</a><br><br>DeltaWiki Engine <span id="devphase" style="cursor:help;">β</span><div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="devphase">Beta</div>4 Escrow<br><span style="font-size: smaller; color:darkgray !important;">Build 4.2.2000.kuro_escro.250725-1423</span></span>
     </nav>
   </div>
   <main class="mdl-layout__content">
-    <div class="box mdl-shadow--8dp" style="background-color: white; width:96%; justify-content: center; display: block; margin: 0 auto; padding: 8px;">
+    <div class="box mdl-shadow--8dp" style="background-color: rgba(255,255,255,0.75); backdrop-filter: blur(15px); width:96%; justify-content: center; display: block; margin: 0 auto; padding: 8px;">
         <div class="container" style="margin-left: 15px; margin-right: 15px; margin-top: 15px; margin-bottom: 15px">
             <div class="hatnote">
             
         </div>
-      <h4 id="pagetitle" style="color:rgb(27, 122, 167)" >Dogui Heavy Industries Incorporated</h4><hr style="color: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))!important;">
+      <h4 id="pagetitle" style="color:rgb(97, 97, 97)" >Dogui Heavy Industries Incorporated</h4><hr style="color: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))!important;">
       <noscript><b><span style="color:rgb(197, 195, 49);">Note:</span></b><i> JavaScript is not enabled. The HoriWiki Engine may not work to its full capacity.</i></noscript>
             <p><strong>Dogui Heavy Industries Incorporated</strong><a href="#notec1">¹</a> (DHI Inc.) is a fictional Horilandese company. Its main headquarters are located in <a href="Fucking">Fucking</a>, the capital city of <a href="Horiland">Horiland</a>.</p>
 
-<p>The company was founded in June 2024 as Dogui Heavy Coding Industries, with its first part of the name inheriting from <a href="Dogui">Dogui</a>, the name of <a href="Horibyte">Horibyte</a>’s dog plushie which at the time was the logo of <a href="StuffyXP">StuffyXP</a>. Its first mention was on a message on a Discord Server in which Horibyte was in, which had attached the <a href="Stuffy_Vlogs">Stuffy Vlogs</a> background from the time.</p>
+<p>The company was founded in June 2024 as Dogui Heavy Coding Industries, with its first part of the name inheriting from <a href="Dogui">Dogui</a>, the name of <a href="Lexibyte">Lexibyte</a>’s dog plushie which at the time was the logo of <a href="StuffyXP">StuffyXP</a>. Its first mention was on a message on a Discord Server in which Lexibyte was in, which had attached the <a href="Stuffy_Vlogs">Stuffy Vlogs</a> background from the time.</p>
 
 <p>In July 2024, the company was renamed Dogui Heavy Industries Limited, having its own motto:</p>
 <blockquote>
   <p><em>When the tables suddenly turn at the Dogui Heavy Industries Headquarters, it’s when you know there’s a certified Stuffy Moment</em></p>
 </blockquote>
 
-<p>As of March 2025, Dogui Heavy Industries has changed from a Limited Company to a Incorporation, hence its current name. It is one of the most profitable businesses founded and ran in Horiland. It has been said that works made by DHI’s employees are prone to <a href="Horibyte_Moments">Horibyte Moments</a>.<br />
+<p>As of March 2025, Dogui Heavy Industries has changed from a Limited Company to a Incorporation, hence its current name. It is one of the most profitable businesses founded and ran in Horiland. It has been said that works made by DHI’s employees are prone to <a href="Horibyte_Moments">Lexibyte Moments</a>.<br />
 <br /><img src="img/articles/dhi/hq.png" alt="Headquarters of DHI Inc. in Fucking, Horiland" title="Headquarters of DHI Inc. in Fucking, Horiland" width="50%" /></p>
 <p id="caption">Headquarters of DHI Inc. in Fucking, Horiland</p>
 
 <h3 id="subsidiaries">Subsidiaries</h3>
+<hr />
 <h4 id="dhi-turtles">DHI Turtles</h4>
-<p><strong>DHI Turtles Inc.</strong> (fully known as <em>Dogui Heavy Industries Limited: Turtle Research &amp; Observatory Center LLC</em>) is a subsidiary of Dogui Heavy Industries Incorporated, its main goal is to rescue, preserve and study Horilandese turtles.<br />
+<hr />
+<p><strong>DHI Turtles LLC</strong> (fully known as <em>Dogui Heavy Industries Turtle Research &amp; Observatory Center LLC</em>) is a subsidiary of Dogui Heavy Industries Incorporated, its main goal is to rescue, preserve and study Horilandese turtles.<br />
 <br /><img src="img/articles/dhi/hqturtles.png" alt="Headquarters of DHI Turtles on the coast of Fucking, Horiland" title="Headquarters of DHI Turtles on the coast of Fucking, Horiland" width="50%" /></p>
 <p id="caption">Headquarters of DHI Turtles in Fucking, Horiland</p>
 
 <h4 id="dhi-movies">DHI Movies</h4>
-<p><strong>DHI Movies Corp.</strong> (fully known as <em>Dogui Heavy Industries Limited: Movie Film-making &amp; Studio Corporation</em>) is a Horilandese film-making company, subsidiary of Dogui Heavy Industries Incorporated. The company’s headquarters are located in Redlock, <a href="Ture,_Horiland">Ture</a>, Horiland.</p>
+<hr />
+<p><strong>DHI Movies Corp.</strong> (fully known as <em>Dogui Heavy Industries Movie Studio Corporation</em>) is a Horilandese film-making company, subsidiary of Dogui Heavy Industries Incorporated. The company’s headquarters are located in Redlock, <a href="Ture,_Horiland">Ture</a>, Horiland.</p>
 
-<p>DHI Movies Corp. has released various films related to the Horiland country, honorable filmography are “<em>Ture: The Nuke of the ‘25</em>” and its prequel “<em>Jell: a Ture of the Past</em>”, both recieving a box office amount of <a href="Horidollar">H.</a> 459M separately.</p>
+<p>DHI Movies Corp. has released various films related to the Horiland country, honorable filmography are “<em>Ture: The Nuke of the ‘25</em>” and its prequel “<em>Jell: a Ture of the Past</em>”, both recieving a box office amount of <a href="Lexdollar">LXL.</a> 459M separately.</p>
+
+<h4 id="loreside"><a href="LexWiki%3ALoreside">Loreside</a></h4>
+<hr />
+<p>The company was founded in early 2003 as Dogui Heavy Coding Industries (whose purposes was split into a subsidiary called <strong>DHISoft</strong>), and became the most profitable business in <a href="LexLand">StuffyLand</a> December 2010.</p>
+
+<p>The company has a history of filing for Chapter Nine Bankruptcy two times in 2013 and 2018 respectively. Both being due to loss of profit due to bad quality of products, the most notable case being in 12 January 2005 where the company’s products were affected by computer glitches (<a href="Lexibyte_Moments">Lex Moments</a>), the company slowly kept losing money until 2013 and gained a bad reputation.</p>
+
+<p>In July 2013 the company filed for Chapter Nine Bankruptcy, which allowed them to try to make a plan to gain enough money to cover up the debt (LXL. 250,000,000).</p>
+
+<p>In December 2013, a new CEO was put in place, they used all their salary to fund DHI Turtles LLC, an organization to <em>protect, save and rescue LexLandese turtles</em>. The company paid off with donations recieved from DHI Turtles, the Horilandese Goverment donated LXL. 300,000,000 as a way to keep the company on business. The company regained its reputation after making a promise to use 67% of their money to help DHI Turtles.</p>
+
+<p>After the Economy Crash of 2017, DHI suffered a loss of LXL. 761,000,000 which made both DHI and DHI Turtles file for Bankruptcy Chapter Nine again, not only for the economy crash, poor employee and product management resulted in a 2% layoff which made DHI loss about LXL. 500,000. Another CEO was put in place to better manage money and products, as well as internal company disputes.</p>
+
+<p>The company was barely keeping itself alive in 2019 until COVID-19 struck StuffyLand, DHI founded DHI Movies, a movie studio for the citizen’s entertainment while at home.</p>
+
+<p>The company successfully recovered from the crash (in fact, was only one of the two to do so) and gained around LXL 1B due to the massive success of DHI Movies, and several donations for DHI Turtles. The company became the most profitable business in the country again in August 2021 due to a new CEO, <a href="Lexibyte">Lex</a>.</p>
 
 <p id="note"><a href="#notec1" id="notec1">&sup1;<span></span>&uparrow;</a> Formerly known as <b>Dogui Heavy Industries Limited</b> (DHI Ltd.) and <b>Dogui Heavy Coding Industries</b> (DHCI).</p>
 

@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="HoriWiki">
-    <meta property="og:description" content="Horibyte Wiki Beta 2">
-    <meta property="og:url" content="https://horibyte.is-a.dev/wiki/">
+    <meta property="og:title" content="KuroWiki Beta 4 Escrow">
+    <meta property="og:description" content="KuroWiki Beta 4/Release Candidate 1 Escrow Developer Build.">
+    <meta property="og:url" content="https://lexnova.is-a.dev/wiki/">
     <meta name="theme-color" content="#ffffff">
     <meta content="website" property="type">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <meta name="google-site-verification" content="juCkrJsWFUpDDiBrebgAywCVCCE90p5S7yfXBNjIlXQ" />
-    <title>A VMware First-Timer installs Windows XP! ~ HoriWiki</title>
+    <title>A VMware First-Timer installs Windows XP! ~ KuroWiki</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.light_blue-blue.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     <style>
         html {
-            background-image: url('https://getmdl.io/assets/demos/transparent.jpg') !important;
+            background-image: url('img/bg.jpg') !important;
+            background-position-y: -350px;
             background-attachment: fixed;
-            background-size: 210%;background-position-x: 45%;
+            
             /* background-image: linear-gradient(to bottom right, rgb(15, 17, 90), rgb(34, 12, 70)) */
         }
     </style>
@@ -31,6 +33,23 @@
      your background is light. */
   color: white;
 }
+
+/* is-hidden-widescreen re-implementation from Bulma */
+@media screen and (min-width:1081px) {
+  .is-display-none-widescreen,
+  .is-hidden-widescreen {
+    display:none!important;
+  }
+}
+
+/* is-hidden-mobile re-implementation from Bulma */
+@media screen and (max-width:1080px) {
+  .is-display-none-mobile,
+  .is-hidden-mobile {
+    display:none!important;
+  }
+}
+
 
 a {
     text-decoration: none !important;
@@ -46,6 +65,23 @@ a {
   .is-hidden-mobile {
     display:none!important;
   }
+}
+
+.mdl-layout__drawer {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(20px);
+  color:white !important;
+  border-color: none;
+  border-right: 0px;
+}
+
+.mdl-navigation__link {
+  color:white !important;
+  
+}
+
+.mdl-navigation__link:hover {
+  background-color: rgba(0, 0, 0, 0.6) !important;
 }
 
 .hatnote {
@@ -77,7 +113,7 @@ img {
 
 
 .mdl-layout__header {
-    background-color: rgba(0, 0, 0, 0.2) !important;
+    background-color: rgba(0, 0, 0, 0) !important;
 }
 </style>
 <div class="container" id="background-image">
@@ -85,7 +121,7 @@ img {
   <header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
         <div class="container is-hidden-mobile">
-      <span id="title" class="mdl-layout-title">HoriWiki</span>
+      <span id="title" class="mdl-layout-title">KuroWiki</span>
       </div>
        <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
@@ -97,8 +133,8 @@ img {
             <div class="container" style="padding: 5%; margin:-10px !important;">
             <form action="results" method="get">
             <div class="mdl-textfield mdl-js-textfield">
-            <input class="mdl-textfield__input" type="text" id="search-input" name="q">
-            <label class="mdl-textfield__label" for="sample1"><i style="color: rgb(230,230,230) !important">Search HoriWiki...</i></label>
+            <input class="mdl-textfield__input" type="text" id="search-input" name="q" style="border-bottom: 0px rgba(0,0,0,0);">
+            <label class="mdl-textfield__label" for="sample1"><i style="color: rgba(255,255,255,0.5) !important;font-family: Roboto;">Search KuroWiki...</i></label>
             </div>
             </div>
             </form>
@@ -108,37 +144,37 @@ img {
     </div>
   </header>
   <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">HoriWiki</span>
+    <span class="mdl-layout-title">KuroWiki</span>
     <nav class="mdl-navigation" style="margin-top: -5% !important;">
       <a class="mdl-navigation__link" href="Main_Page">Main Page</a>
       <a class="mdl-navigation__link" href="Special%3ASitemap">Sitemap</a>
-      <a class="mdl-navigation__link" href="Contributing_to_HoriWiki">Contribute!</a>
-      <span style="padding-left:5.5%; color:gray"><br>&copy;2025 HoriWiki Contributors.<br>All Rights Reserved.<br><br>Content & <a href="https://github.com/horibyte/wiki/">source code</a> licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0</a><br><br>HoriWiki Engine <span id="devphase" style="cursor:help;">β</span><div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="devphase">Beta</div>2<br><span style="font-size: smaller; color:darkgray !important;">Build 2.1.602.material.250602-1710</span></span>
+      <a class="mdl-navigation__link" href="Contributing_to_the_LexWiki">Contribute!</a>
+      <span style="padding-left:5.5%; color:white"><br>&copy;2025 KuroWiki Contributors.<br>All Rights Reserved.<br><br>Content & <a href="https://github.com/thelexibyte/wiki/">source code</a> licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en">Creative Commons Attribution-ShareAlike 4.0</a><br><br>DeltaWiki Engine <span id="devphase" style="cursor:help;">β</span><div class="mdl-tooltip mdl-tooltip--top" data-mdl-for="devphase">Beta</div>4 Escrow<br><span style="font-size: smaller; color:darkgray !important;">Build 4.2.2000.kuro_escro.250725-1423</span></span>
     </nav>
   </div>
   <main class="mdl-layout__content">
-    <div class="box mdl-shadow--8dp" style="background-color: white; width:96%; justify-content: center; display: block; margin: 0 auto; padding: 8px;">
+    <div class="box mdl-shadow--8dp" style="background-color: rgba(255,255,255,0.75); backdrop-filter: blur(15px); width:96%; justify-content: center; display: block; margin: 0 auto; padding: 8px;">
         <div class="container" style="margin-left: 15px; margin-right: 15px; margin-top: 15px; margin-bottom: 15px">
             <div class="hatnote">
             
         </div>
-      <h4 id="pagetitle" style="color:rgb(27, 122, 167)" >A VMware First-Timer installs Windows XP!</h4><hr style="color: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))!important;">
+      <h4 id="pagetitle" style="color:rgb(97, 97, 97)" >A VMware First-Timer installs Windows XP!</h4><hr style="color: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0))!important;">
       <noscript><b><span style="color:rgb(197, 195, 49);">Note:</span></b><i> JavaScript is not enabled. The HoriWiki Engine may not work to its full capacity.</i></noscript>
-            <p><strong>A VMware First-Timer installs Windows XP!</strong> is the first public <a href="StuffyXP">StuffyXP</a> video by <a href="Horibyte">Horibyte</a>. It was uploaded to YouTube on <strong>13 February 2024</strong> and had a total view count of <strong>548 views</strong> before the StuffyXP channel was deleted on 14 March 2025.</p>
+            <p><strong>A VMware First-Timer installs Windows XP!</strong> is the first public <a href="StuffyXP">StuffyXP</a> video by <a href="Lexibyte">Lexibyte</a>. It was uploaded to YouTube on <strong>13 February 2024</strong> and had a total view count of <strong>548 views</strong> before the StuffyXP channel was deleted on 14 March 2025.</p>
 
-<p>The video consisted of Horibyte installing Microsoft Windows XP Professional Service Pack 3 on VMware Workstation Pro 12 in their Windows 8.1 host. It is also the first StuffyXP video to be made on TheCeleryPC, as well as the first StuffyXP video of 2024.</p>
+<p>The video consisted of Lexibyte installing Microsoft Windows XP Professional Service Pack 3 on VMware Workstation Pro 12 in their Windows 8.1 host. It is also the first StuffyXP video to be made on TheCeleryPC, as well as the first StuffyXP video of 2024.</p>
 
 <p>Addionally, 2 YouTube Shorts were uploaded to the StuffyXP channel showing a sneak peak of the video, with an audio bug from the video editor, another one is the analytics of the video as of 2 days later (citation needed).</p>
 
 <h4 id="development">Development</h4>
 
-<p>Shortly after 2024 started (and Horibyte finding their friend group), Horibyte was inspired by them [the friend group] to also make their own tech videos on YouTube, shortly after that, they started to find a video editor that is compatible with their daily driver at the time, <a href="TheCeleryPC">TheCeleryPC</a>.</p>
+<p>Shortly after 2024 started (and Lexibyte finding their friend group), Lexibyte was inspired by them [the friend group] to also make their own tech videos on YouTube, shortly after that, they started to find a video editor that is compatible with their daily driver at the time, <a href="TheCeleryPC">TheCeleryPC</a>.</p>
 
-<p>Horibyte chose <em>Camtasia Studio 8</em> after recalling that FlyTech Videos used it in some of their videos as well, Horibyte continued to use the program until <em>The forgotten Windows Competitor…</em> came out, as <em>Geometry Dash… on Windows Vista!?</em> was edited with DaVinci Resolve on <a href="Thei5Lappy">Thei5Lappy</a> up until the last StuffyXP video.</p>
+<p>Lexibyte chose <em>Camtasia Studio 8</em> after recalling that FlyTech Videos used it in some of their videos as well, Lexibyte continued to use the program until <em>The forgotten Windows Competitor…</em> came out, as <em>Geometry Dash… on Windows Vista!?</em> was edited with DaVinci Resolve on <a href="Thei5Lappy">Thei5Lappy</a> up until the last StuffyXP video.</p>
 
 <p>After finding the program, they started the recording and edited the video, unfortunely the video file ended up being corrupted per-se, as Camtasia wrongfully thought that the video file was from an older version of Camtasia and had to be upgraded, after the ““upgrade””, the file was blank. This made the video be delayed from 8 January to 14 January. It then happened again on 16 January, delaying the video even further to 26 January.</p>
 
-<p>The video was delayed again in 28 January due to Horibyte bricking their Windows 8.1 installation, causing them to enhance and re-add several parts of the video in their Windows Vista installation, after that, the power outlet that powered TheCeleryPC died and had to be replaced, causing the video to be delayed for almost a week. Horibyte upgraded to Windows 7 1 day before the video was uploaded.</p>
+<p>The video was delayed again in 28 January due to Lexibyte bricking their Windows 8.1 installation, causing them to enhance and re-add several parts of the video in their Windows Vista installation, after that, the power outlet that powered TheCeleryPC died and had to be replaced, causing the video to be delayed for almost a week. Lexibyte upgraded to Windows 7 1 day before the video was uploaded.</p>
 
 <p>The video was made within 3 Windows versions:</p>
 
@@ -150,7 +186,7 @@ img {
 
 <h5 id="collab-effects">Collab effects</h5>
 
-<p>Shortly before the Horibyte-Clyron collab was uploaded, several StuffyXP and Lynxmic videos’ thumbnails were updated in order to fit with the new thumbnails designed in the video, <strong>A VMware First-Timer installs Windows XP!</strong> was one of those videos.</p>
+<p>Shortly before the Lexibyte-Clyron collab was uploaded, several StuffyXP and Lynxmic videos’ thumbnails were updated in order to fit with the new thumbnails designed in the video, <strong>A VMware First-Timer installs Windows XP!</strong> was one of those videos.</p>
 
 <p>Alongside the thumbnail, the video’s description was updated to fit with the recent video’s description style, a notice telling the viewer that the video is an old video of them and that other better videos are on the platform was also added.</p>
 
@@ -161,7 +197,7 @@ img {
 <p><em>- The notice</em></p>
 
 <p><img src="img/articles/avftiwx/thumbremake.png" alt="The remade thumbnail made in the collab" width="50%" /></p>
-<p id="caption">The remade thumbnail designed in the Horibyte-Clyron collab</p>
+<p id="caption">The remade thumbnail designed in the Lexibyte-Clyron collab</p>
 
         </div>
     </div>

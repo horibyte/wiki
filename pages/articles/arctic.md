@@ -1,23 +1,30 @@
 ---
 layout: main
-title: Horibyte Arctic
-permalink: Horibyte_Arctic
-hatnote: This article details a work-in-progress project by <a href="Horibyte">Horibyte</a> and is currently incomplete.
+title: LexNova Arctic
+permalink: LexNova_Arctic
+hatnote: This article details a work-in-progress project by <a href="LexNova">LexNova</a> and is currently incomplete.
+redirect_from:
+  - Horibyte_LeafyOS
+  - LeafyOS
+  - Project_Arctic
+  - Arctic
+  - Horibyte_Arctic
+  - Lexibyte_Arctic
 ---
 
-**Horibyte Arctic**[&sup1;](#notec1){: id="note1"} is an open-source operating system for personal computers, developed and maintained by [Horibyte](Horibyte). It was first released on May 26, 2025, and its source code is available on GitHub ([github.com/horibyte/arctic](https://github.com/horibyte/arctic)).
+**LexNova Arctic**[&sup1;](#notec1){: id="note1"} is an open-source operating system for personal computers, developed and maintained by [LexNova](LexNova). It was first released on May 26, 2025, and its source code is available on GitHub ([github.com/thelexibyte/arctic](https://github.com/thelexibyte/arctic)).
 
-![Horibyte Arctic 0.1.5 Demo on QEMU](img/articles/arctic/0.1.5demo.png){: style="box-shadow:none!important;"}
-<p id="caption">QEMU running Horibyte Arctic 0.1.5</p>
+![LexNova Arctic 0.1.5 Demo on QEMU](img/articles/arctic/0.1.5demo.png){: style="box-shadow:none!important;"}
+<p id="caption">QEMU running LexNova Arctic 0.1.5a</p>
 
 Arctic is currently **only compatible with QEMU and VMware**. This limitation stems from how other virtualization and emulation software manage image files, whereas QEMU and VMware allow for disks without pre-existing file systems.
 
 The latest stable release, as of May 27, 2025, is version 0.1.5.
 
 
-### Overview
+#### Overview
 
-Horibyte Arctic operates as a 16-bit real mode system, making it potentially compatible with processors as early as the Intel 8088 (citation needed). Horibyte suggests the following recommended system requirements:
+LexNova Arctic operates as a 16-bit real mode system, making it potentially compatible with processors as early as the Intel 8088 (citation needed). LexNova suggests the following recommended system requirements:
 
 * A 486 processor
 * 4 MB of RAM
@@ -38,15 +45,14 @@ shutdown     Halts the system
 
 Arctic is available in two SKUs: **Standard** and **Server**. The Server SKU is currently only accessible within Lab02.
 
----
 
-### Development
+#### Development
 
 Development of Arctic began around May 26, 2025, initially featuring a command-line interface (CLI) as its primary user interface. All development builds available as of May 27, 2025, are written in Assembly.
 
-Interestingly, instances of a `LeafyOS` virtual machine have been observed in Horibyte's VMware VM library. Additionally, Horibyte has mentioned and even shared screenshots of several `kernel.bin` files, although all of these files have since been lost.
+Interestingly, instances of a `LeafyOS` virtual machine have been observed in LexNova's VMware VM library. Additionally, LexNova has mentioned and even shared screenshots of several `kernel.bin` files, although all of these files have since been lost.
 
-**Lab02**, one of Horibyte's virtual development labs, contains code for a <span id="tt2">i386</span> version of Arctic 0.1.5, known as [Arctic32](Arctic32). Horibyte has stated that this build is unstable:
+**Lab02**, one of LexNova's virtual development labs, contains code for a <span id="tt2">i386</span> version of Arctic 0.1.5, known as [Arctic32](Arctic32). LexNova has stated that this build is unstable:
 
 <div class="mdl-tooltip mdl-tooltip--large" for="tt2">
 32-bit
@@ -56,17 +62,16 @@ Interestingly, instances of a `LeafyOS` virtual machine have been observed in Ho
 > It won't even boot, I'll tell ya that.
 >
 
-*— Horibyte*
+*— LexNova*
 
 The source code for this experimental build has been uploaded to GitHub.
 
-**Lab03** serves as a testing ground for core servicing changes within the operating system's code. The most notable project developed within Lab03 is the ***Horibyte Arctic Setup Program***.
+**Lab03** serves as a testing ground for core servicing changes within the operating system's code. The most notable project developed within Lab03 is the ***LexNova Arctic Setup Program***.
 
-While Horibyte has not shared the code from this development lab, screenshots of its contents do (and even compiled builds) do exist.
+While LexNova has not shared the code from this development lab, screenshots of its contents do (and even compiled builds) do exist.
 
----
 
-### Kernel Overview
+#### Kernel Overview
 
 The Arctic loading process involves three key files:
 
@@ -78,13 +83,13 @@ The Arctic kernel is a monolithic kernel, a design choice attributed to its curr
 
 As it stands, Arctic remains a 16-bit real mode system due to the aforementioned challenges faced during the attempt to transition from 16-bit to 32-bit.
 
----
 
-### The Mockup Era™ Gallery
 
-*This gallery showcases the finished Arctic mockups created by Horibyte.*
+#### The Mockup Era™ Gallery
 
-Before active development began, Horibyte designed several Arctic mockups using GIMP. These images are conceptual representations and are **not** actual screenshots of functional builds—*yet!*
+*This gallery showcases the finished Arctic mockups created by LexNova.*
+
+Before active development began, LexNova designed several Arctic mockups using GIMP. These images are conceptual representations and are **not** actual screenshots of functional builds—*yet!*
 
 ![](img/articles/arctic/7078personal.png)
 <p id="caption">Horibyte Arctic Personal Beta 2 Build 7078</p>
